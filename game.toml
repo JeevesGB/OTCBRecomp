@@ -1,35 +1,54 @@
-# Minimal game.toml stub for the New Project Layout.
-# With setup_project --disc <cue>, probe_disc.py overwrites this with
-# serial / EXE header / Track 01 digests / TOC fp / [netplay] gates, and writes
-# seeds/ghidra_funcs.txt (boot-EXE JAL scan).
-# Without --disc, fill by hand (or re-run probe_disc.py later).
-# See psxrecomp/docs/GAME_PROJECT_SETUP.md and docs/config_schema.md.
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
 
 [game]
-name = "OTCB"
-# id = "SLUS-XXXXX"
+name = "Option Tuning Car Battle Spec R"
+id = "SLPS-02587"
 players = 8
-# exe = "disc/SLUS_01234"
-# disc = "disc/game.cue"
-# load_address = "0x80010000"
-# entry_pc = "0x800XXXXX"
-# text_size = "0x00000000"
-# stack_base = "0x801FFFF0"
+exe = "disc/SLPS_025.87"
+disc = "E:\\otcb-recomp\\disk\\OTCBSR.cue"
+load_address = "0x80010000"
+entry_pc = "0x8009AE3C"
+text_size = "0x000BC000"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "OTCBSR.bin"
+cue_name = "OTCBSR.cue"
+boot_exe = "SLPS_025.87"
+known_sizes = [394966656]
+known_md5 = [
+  "4cd5f9e18c866fb0349c47a28715f7a7",
+]
+known_sha1 = [
+  "3ee55ab10f1b9646f2006874f24d3ec98ab8f38d",
+]
+known_crc32 = [
+  "a0d16309",
+]
 
 [recompiler]
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
 
-# Optional identity hashes for Generate / netplay dump checks:
-# [prepare_disc]
-# out_dir = "disc"
-# boot_exe = "SLUS_01234"
-# known_sizes = [...]
-# known_md5 = [...]
-# known_sha1 = [...]
+[runtime]
+window_title = "Option Tuning Car Battle Spec R Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
 
-# [netplay]
-# require_cue = true
-# required_tracks = 0
-# required_disc_fp = "…"
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 11
+required_disc_fp = "8b323fddc573b8e7e7a7f2dbdb044181fa164cb849ed01ad9587febcdddfb3d7"

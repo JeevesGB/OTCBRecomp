@@ -50,13 +50,13 @@ psxrecomp_add_game_runtime(psx-runtime
     # Committed game C (psxrecomp_cli.py generate; git add generated). Release
     # CI configures with -DPSXRECOMP_REQUIRE_GAME_C=ON so a checkout without
     # it fails instead of building a setup host.
-    GEN_MARKER "generated/SLUS_01234_dispatch.c"
-    GEN_FULL_GLOB "generated/SLUS_01234_full_*.c"
+    GEN_MARKER "generated/SLPS_025.87_dispatch.c"
+    GEN_FULL_GLOB "generated/SLPS_025.87_full_*.c"
     CODEGEN_SETUP_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/codegen_setup.c"
 )
 
 # Stage runtime configs next to the exe for direct build/ launches. Only copy
-# files that exist — never fail POST_BUILD when game_options.toml is absent.
+# files that exist ??? never fail POST_BUILD when game_options.toml is absent.
 foreach(_PSX_RUNTIME_CONFIG game.toml game_options.toml)
     if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${_PSX_RUNTIME_CONFIG}")
         add_custom_command(TARGET psx-runtime POST_BUILD
