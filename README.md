@@ -12,13 +12,6 @@ Static recompilation of **OTCB** built on
 
 -
 
-| | |
-|---|---|
-| Players | 8 |
-| Region | JP |
-| Publisher | MTO |
-| Year | 2000 |
-
 Scaffolded with the New Project Layout. See
 `psxrecomp/docs/GAME_PROJECT_SETUP.md` for the full flow.
 

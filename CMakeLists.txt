@@ -67,3 +67,22 @@ foreach(_PSX_RUNTIME_CONFIG game.toml game_options.toml)
             VERBATIM)
     endif()
 endforeach()
+
+# OTCB: launcher artwork. recomp-ui only copies the images it ships itself, so
+# anything in launcher_assets/img (launcher_logo.tga, launcher_bg.tga, ...) would
+# otherwise never reach the exe's assets/img folder, where the launcher loads
+# its images from. Copy at configure time (picks up edits on every rebuild) and
+# again after each link.
+set(OTCB_LAUNCHER_IMG "${CMAKE_CURRENT_SOURCE_DIR}/launcher_assets/img")
+if(IS_DIRECTORY "${OTCB_LAUNCHER_IMG}")
+    file(GLOB _OTCB_LAUNCHER_IMGS "${OTCB_LAUNCHER_IMG}/*.tga")
+    if(_OTCB_LAUNCHER_IMGS)
+        file(COPY ${_OTCB_LAUNCHER_IMGS}
+             DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/assets/img")
+    endif()
+    add_custom_command(TARGET psx-runtime POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${OTCB_LAUNCHER_IMG}" "$<TARGET_FILE_DIR:psx-runtime>/assets/img"
+        COMMENT "Staging launcher_assets/img"
+        VERBATIM)
+endif()
