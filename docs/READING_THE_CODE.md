@@ -1,19 +1,79 @@
 # Reading and building OTCBRecomp
 
-## Why `generated/` is hard to read
+## Readable C (`readable/`)
 
-`generated/SLPS_025.87_full_*.c` (193 shards, 3,165 functions, ~151k MIPS
-instructions) is compiler output, not source. The recompiler expands every MIPS
-instruction into roughly 20 lines of C: cycle accounting, PGXP precision hooks,
-debug hooks, co-simulation hooks and instruction-cache fetches, each behind
-`#ifdef`s. That machinery is what makes the result cycle-accurate, so it must
-stay. The files are regenerated from the original executable and must not be
-edited by hand (see `psxrecomp/CLAUDE.md`, rule 4).
+`generated/SLPS_025.87_*.c` is compiler output (7.0 million lines, 258 MB).
+The recompiler emits code for every build flavour (co-simulation, PGXP precision
+tracking, debug tools, tail chains) and each MIPS instruction expands to about
+20 lines of C. A given build only compiles one flavour, so most of that text is
+dead code for it.
 
-The readable layer therefore sits on top of the generated code instead of
-replacing it.
+`readable/` is the same program with that dead code removed (0.8 million lines,
+33 MB, all 3,165 functions). It is produced by `tools/make_readable.py`:
 
-## Reading a function
+1. The build-flavour `#ifdef`s are resolved with the release build's real
+   settings (cycle accounting stays; co-sim, PGXP, debug tools, tail chains are
+   off in that build, so their code goes).
+2. The no-op PGXP wrappers and the temporaries that only fed them are removed.
+3. `cpu->gpr[29]` becomes `sp`, `cpu->gpr[31]` becomes `ra`, and so on.
+4. Each raw encoding comment becomes the MIPS instruction it implements.
+
+Before:
+
+```c
+{ uint32_t _pgxa = cpu->gpr[29] + 100; cpu->gpr[31] = psx_cyc_load_word(cpu, cpu->gpr[29] + 100, 31, 0x20000000u);
+PGXP_LOAD(0x8FBF0064u, _pgxa, cpu->gpr[31]); }  /* 0x80010B20: 0x8FBF0064 */
+```
+
+After:
+
+```c
+ra = psx_cyc_load_word(cpu, sp + 100, 31, 0x20000000u);  /* 80010B20  lw $ra, 0x64($sp) */
+```
+
+What is still there on purpose: the block labels and the `cpu->pc` re-entry
+switch, the `psx_cyc_*` cycle accounting and `psx_icache_fetch`. Calls and
+returns in this design are not C calls: a `jal` sets `cpu->pc` and returns to a
+dispatcher, and every block can be re-entered. Removing that would break the
+game, so it stays.
+
+**This is not decompiled source.** There are no original variable names,
+structs or loops. The code is still what a MIPS CPU executes, written as C.
+
+### How it is verified
+
+Nothing is trusted by eye. `--verify` compiles the original and the readable
+shard with the project's real compiler command and compares the machine code:
+
+```sh
+python3 tools/make_readable.py --verify generated/SLPS_025.87_full_00.c
+```
+
+Result over all 192 files: 188 compile to byte-identical `.text` and `.rodata`.
+Four (full_47, 51, 63, 64) contain exactly the same instructions with 2-4
+independent register loads scheduled in a different order by the compiler, out
+of about 11,000-12,000 instructions each. A full game build from `readable/`
+links (see below).
+
+### Using it
+
+```sh
+python3 tools/make_readable.py                     # regenerate readable/ (needs unifdef, capstone)
+cmake -S . -B build-readable -G Ninja -DCMAKE_BUILD_TYPE=Release \
+      -DPSXRECOMP_REQUIRE_GAME_C=ON -DOTCB_USE_READABLE_C=ON
+```
+
+`generated/` remains the source of truth and is what CI builds. Regenerate
+`readable/` whenever `generated/` changes. It is only valid for the release
+flavour; if you build with PSX_COSIM or PGXP on, use `generated/`. On Windows
+`unifdef` is available from MSYS2 (`pacman -S unifdef`).
+
+## Why `generated/` is hard to read (background)
+
+The files must not be edited by hand (see `psxrecomp/CLAUDE.md`, rule 4); they
+are regenerated from the original executable.
+
+## Reading a function as plain assembly
 
 ```sh
 pip install capstone                       # one-time, Python 3.11+ (any OS)

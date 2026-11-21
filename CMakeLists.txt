@@ -37,6 +37,17 @@ if(NOT IS_DIRECTORY "${PSX_PRELOADED_MODS}")
     set(PSX_PRELOADED_MODS "NONE")
 endif()
 
+# Optional: compile the readable shards (tools/make_readable.py) instead of
+# generated/. They are the same code with the unused build-flavour code removed
+# and MIPS register names, verified to compile to identical machine code. Only
+# valid for this release flavour (no PSX_COSIM / PGXP / tail chains).
+option(OTCB_USE_READABLE_C "Compile readable/ instead of generated/" OFF)
+if(OTCB_USE_READABLE_C)
+    set(OTCB_FULL_GLOB "readable/SLPS_025.87_full_*.c")
+else()
+    set(OTCB_FULL_GLOB "generated/SLPS_025.87_full_*.c")
+endif()
+
 psxrecomp_add_game_runtime(psx-runtime
     PRELOADED_MODS_DIR "${PSX_PRELOADED_MODS}"
     # ENABLE_NETPLAY_IF_PRESENT
@@ -51,9 +62,13 @@ psxrecomp_add_game_runtime(psx-runtime
     # CI configures with -DPSXRECOMP_REQUIRE_GAME_C=ON so a checkout without
     # it fails instead of building a setup host.
     GEN_MARKER "generated/SLPS_025.87_dispatch.c"
-    GEN_FULL_GLOB "generated/SLPS_025.87_full_*.c"
+    GEN_FULL_GLOB "${OTCB_FULL_GLOB}"
     CODEGEN_SETUP_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/codegen_setup.c"
 )
+if(OTCB_USE_READABLE_C)
+    # The readable shards #include the generated headers (decls.h etc.).
+    target_include_directories(psx-runtime PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/generated")
+endif()
 
 # Stage runtime configs next to the exe for direct build/ launches. Only copy
 # files that exist ??? never fail POST_BUILD when game_options.toml is absent.
