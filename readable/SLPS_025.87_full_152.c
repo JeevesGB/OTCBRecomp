@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* SsSeqOpen
+ * Ghidra: short __stdcall SsSeqOpen(ulong * param_1, short param_2)
+ * decompiled: functions/functions/8008f6ac.c */
 void func_8008F6AC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -572,6 +575,9 @@ block_8008F928:
     return;
 }
 
+/* _SsContBankChange
+ * Ghidra: void __stdcall _SsContBankChange(short param_1, short param_2)
+ * decompiled: functions/functions/8008f93c.c */
 void func_8008F93C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -674,6 +680,9 @@ block_8008F99C:
     return;
 }
 
+/* _SsContDataEntry
+ * Ghidra: void __stdcall _SsContDataEntry(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8008f9bc.c */
 void func_8008F9BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1691,6 +1700,9 @@ block_8008FD08:
     return;
 }
 
+/* _SsContMainVol
+ * Ghidra: void __stdcall _SsContMainVol(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8008fd3c.c */
 void func_8008FD3C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1849,6 +1861,9 @@ block_8008FDE4:
     return;
 }
 
+/* _SsContPanpot
+ * Ghidra: void __stdcall _SsContPanpot(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8008fe0c.c */
 void func_8008FE0C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2007,6 +2022,9 @@ block_8008FEB4:
     return;
 }
 
+/* _SsContExpression
+ * Ghidra: void __stdcall _SsContExpression(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8008fedc.c */
 void func_8008FEDC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2185,6 +2203,9 @@ block_8008FF94:
     return;
 }
 
+/* _SsContDamper
+ * Ghidra: void __stdcall _SsContDamper(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8008ffcc.c */
 void func_8008FFCC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2375,6 +2396,9 @@ block_80090054:
     return;
 }
 
+/* _SsContExternal
+ * Ghidra: void __stdcall _SsContExternal(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8009007c.c */
 void func_8009007C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2498,6 +2522,9 @@ block_800900E4:
     return;
 }
 
+/* _SsContNrpn1
+ * Ghidra: void __stdcall _SsContNrpn1(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8009010c.c */
 void func_8009010C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2803,6 +2830,9 @@ block_800901EC:
     return;
 }
 
+/* _SsContNrpn2
+ * Ghidra: void __stdcall _SsContNrpn2(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8009020c.c */
 void func_8009020C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3220,6 +3250,9 @@ block_80090330:
     return;
 }
 
+/* _SsContRpn1
+ * Ghidra: void __stdcall _SsContRpn1(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/8009034c.c */
 void func_8009034C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3319,6 +3352,9 @@ block_800903A4:
     return;
 }
 
+/* _SsContRpn2
+ * Ghidra: void __stdcall _SsContRpn2(short param_1, short param_2, uchar param_3)
+ * decompiled: functions/functions/800903bc.c */
 void func_800903BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3418,6 +3454,9 @@ block_80090414:
     return;
 }
 
+/* _SsContResetAll
+ * Ghidra: void __stdcall _SsContResetAll(short param_1, short param_2)
+ * decompiled: functions/functions/8009042c.c */
 void func_8009042C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3580,6 +3619,9 @@ block_800904C8:
     return;
 }
 
+/* _SsSetNrpnVabAttr0
+ * Ghidra: void __stdcall _SsSetNrpnVabAttr0(short param_1, short param_2, short param_3, VagAtr param_4, short param_5, uchar param_6)
+ * decompiled: functions/functions/800904ec.c */
 void func_800904EC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3705,6 +3747,9 @@ block_80090558:
     return;
 }
 
+/* _SsSetNrpnVabAttr1
+ * Ghidra: void __stdcall _SsSetNrpnVabAttr1(short param_1, short param_2, short param_3, VagAtr param_4, short param_5, uchar param_6)
+ * decompiled: functions/functions/8009057c.c */
 void func_8009057C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

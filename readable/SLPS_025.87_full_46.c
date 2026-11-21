@@ -881,6 +881,9 @@ block_8003EF18:
     return;
 }
 
+/* InitCollisionResponse
+ * Ghidra: undefined InitCollisionResponse(void)
+ * decompiled: functions/functions/8003ef48.c */
 void func_8003EF48(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1442,6 +1445,9 @@ block_8003F0EC:
     return;
 }
 
+/* HandleCarWallContact
+ * Ghidra: undefined HandleCarWallContact(void)
+ * decompiled: functions/functions/8003f108.c */
 void func_8003F108(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1725,6 +1731,8 @@ block_8003F20C:
     return;
 }
 
+/* Ghidra: undefined FUN_8003f214(void)
+ * decompiled: functions/functions/8003f214.c */
 void func_8003F214(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1864,6 +1872,8 @@ block_8003F270:
     return;
 }
 
+/* Ghidra: undefined FUN_8003f278(void)
+ * decompiled: functions/functions/8003f278.c */
 void func_8003F278(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2087,6 +2097,8 @@ block_8003F308:
     return;
 }
 
+/* Ghidra: undefined FUN_8003f310(void)
+ * decompiled: functions/functions/8003f310.c */
 void func_8003F310(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3699,6 +3711,9 @@ block_8003F91C:
     return;
 }
 
+/* LoadTrackGeometry
+ * Ghidra: undefined LoadTrackGeometry(void)
+ * decompiled: functions/functions/8003f950.c */
 void func_8003F950(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4384,6 +4399,8 @@ void func_8003F9D0(CPUState* cpu)
     psx_alias_body_8003F950(cpu, 0x8003F9D0u);  /* alias entry into host func_8003F950 */
 }
 
+/* Ghidra: undefined FUN_8003f9ec(void)
+ * decompiled: functions/functions/8003f9ec.c */
 void func_8003F9EC(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8003F9ECu);

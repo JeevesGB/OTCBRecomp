@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* CdControlB
+ * Ghidra: int __stdcall CdControlB(u_char com, u_char * param, u_char * result)
+ * decompiled: functions/functions/800a60c8.c */
 void func_800A60C8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -477,6 +480,9 @@ block_800A61E4:
     return;
 }
 
+/* CdMix
+ * Ghidra: int __stdcall CdMix(CdlATV * vol)
+ * decompiled: functions/functions/800a6214.c */
 void func_800A6214(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -536,6 +542,9 @@ block_800A6224:
     return;
 }
 
+/* CdGetSector
+ * Ghidra: int __stdcall CdGetSector(void * madr, int size)
+ * decompiled: functions/functions/800a6234.c */
 void func_800A6234(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -595,6 +604,9 @@ block_800A6244:
     return;
 }
 
+/* CdGetSector2
+ * Ghidra: int __stdcall CdGetSector2(void * madr, int size)
+ * decompiled: functions/functions/800a6254.c */
 void func_800A6254(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -654,6 +666,9 @@ block_800A6264:
     return;
 }
 
+/* CdDataCallback
+ * Ghidra: _func_130 * __stdcall CdDataCallback(func * func)
+ * decompiled: functions/functions/800a6274.c */
 void func_800A6274(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -715,6 +730,9 @@ block_800A6288:
     return;
 }
 
+/* CdDataSync
+ * Ghidra: int __stdcall CdDataSync(int mode)
+ * decompiled: functions/functions/800a6298.c */
 void func_800A6298(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -774,6 +792,9 @@ block_800A62A8:
     return;
 }
 
+/* CdIntToPos
+ * Ghidra: CdlLOC * __stdcall CdIntToPos(int i, CdlLOC * p)
+ * decompiled: functions/functions/800a62b8.c */
 void func_800A62B8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -952,6 +973,9 @@ block_800A62B8:
     return;
 }
 
+/* CdPosToInt
+ * Ghidra: int __stdcall CdPosToInt(CdlLOC * p)
+ * decompiled: functions/functions/800a63bc.c */
 void func_800A63BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1043,6 +1067,9 @@ block_800A63BC:
     return;
 }
 
+/* BIOS_OBJ_0
+ * Ghidra: undefined BIOS_OBJ_0(void)
+ * decompiled: functions/functions/800a643c.c */
 void func_800A643C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3846,30 +3873,45 @@ block_800A6984:
     ;  /* label compatibility */
 }
 
+/* BIOS_OBJ_25C
+ * Ghidra: undefined BIOS_OBJ_25C(void)
+ * decompiled: functions/functions/800a6698.c */
 void func_800A6698(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A6698u);
     psx_alias_body_800A643C(cpu, 0x800A6698u);  /* alias entry into host func_800A643C */
 }
 
+/* BIOS_OBJ_35C
+ * Ghidra: undefined BIOS_OBJ_35C(void)
+ * decompiled: functions/functions/800a6798.c */
 void func_800A6798(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A6798u);
     psx_alias_body_800A643C(cpu, 0x800A6798u);  /* alias entry into host func_800A643C */
 }
 
+/* BIOS_OBJ_3A8
+ * Ghidra: undefined BIOS_OBJ_3A8(void)
+ * decompiled: functions/functions/800a67e4.c */
 void func_800A67E4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A67E4u);
     psx_alias_body_800A643C(cpu, 0x800A67E4u);  /* alias entry into host func_800A643C */
 }
 
+/* BIOS_OBJ_428
+ * Ghidra: undefined BIOS_OBJ_428(void)
+ * decompiled: functions/functions/800a6864.c */
 void func_800A6864(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A6864u);
     psx_alias_body_800A643C(cpu, 0x800A6864u);  /* alias entry into host func_800A643C */
 }
 
+/* BIOS_OBJ_4A8
+ * Ghidra: undefined BIOS_OBJ_4A8(void)
+ * decompiled: functions/functions/800a68e4.c */
 void func_800A68E4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A68E4u);

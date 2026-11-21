@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* _SsVmSetVol
+ * Ghidra: undefined _SsVmSetVol(void)
+ * decompiled: functions/functions/80096c5c.c */
 void func_80096C5C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1299,6 +1302,9 @@ block_800971CC:
     return;
 }
 
+/* _SsVmVSetUp
+ * Ghidra: undefined _SsVmVSetUp(void)
+ * decompiled: functions/functions/800971fc.c */
 void func_800971FC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1533,6 +1539,9 @@ block_800972BC:
     return;
 }
 
+/* InitCDAudio
+ * Ghidra: undefined InitCDAudio(void)
+ * decompiled: functions/functions/800972cc.c */
 void func_800972CC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1564,6 +1573,9 @@ block_800972CC:
     return;
 }
 
+/* SsVabClose
+ * Ghidra: void __stdcall SsVabClose(short param_1)
+ * decompiled: functions/functions/800972dc.c */
 void func_800972DC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1787,6 +1799,9 @@ block_80097370:
     return;
 }
 
+/* SsVabOpenHead
+ * Ghidra: short __stdcall SsVabOpenHead(uchar * param_1, short param_2)
+ * decompiled: functions/functions/8009738c.c */
 void func_8009738C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1857,6 +1872,9 @@ block_800973AC:
     return;
 }
 
+/* VS_VH2_OBJ_34
+ * Ghidra: undefined VS_VH2_OBJ_34(void)
+ * decompiled: functions/functions/800973c0.c */
 void func_800973C0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1992,6 +2010,9 @@ block_80097418:
     return;
 }
 
+/* SsVabOpenHeadSticky
+ * Ghidra: short __stdcall SsVabOpenHeadSticky(uchar * param_1, short param_2, ulong param_3)
+ * decompiled: functions/functions/8009742c.c */
 void func_8009742C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2062,6 +2083,9 @@ block_8009744C:
     return;
 }
 
+/* SsVabFakeHead
+ * Ghidra: short __stdcall SsVabFakeHead(uchar * param_1, short param_2, ulong param_3)
+ * decompiled: functions/functions/80097460.c */
 void func_80097460(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2131,6 +2155,9 @@ block_80097480:
     return;
 }
 
+/* VS_VH_OBJ_68
+ * Ghidra: undefined VS_VH_OBJ_68(void)
+ * decompiled: functions/functions/80097494.c */
 void func_80097494(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2158,6 +2185,9 @@ block_80097494:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* _SsVabOpenHeadWithMode
+ * Ghidra: undefined _SsVabOpenHeadWithMode(void)
+ * decompiled: functions/functions/8009749c.c */
 void func_8009749C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3379,6 +3409,9 @@ block_80097860:
     return;
 }
 
+/* SsVabTransBody
+ * Ghidra: short __stdcall SsVabTransBody(uchar * param_1, short param_2)
+ * decompiled: functions/functions/8009788c.c */
 void func_8009788C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3628,6 +3661,9 @@ block_80097930:
     return;
 }
 
+/* SsVabTransCompleted
+ * Ghidra: short __stdcall SsVabTransCompleted(short param_1)
+ * decompiled: functions/functions/8009794c.c */
 void func_8009794C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3691,6 +3727,8 @@ block_80097960:
     return;
 }
 
+/* Ghidra: undefined FUN_8009797c(void)
+ * decompiled: functions/functions/8009797c.c */
 void func_8009797C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3750,6 +3788,9 @@ block_8009798C:
     return;
 }
 
+/* _SpuInit
+ * Ghidra: void _SpuInit(void)
+ * decompiled: functions/functions/8009799c.c */
 void func_8009799C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

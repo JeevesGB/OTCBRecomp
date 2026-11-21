@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* InitTuningShopDisplay
+ * Ghidra: undefined InitTuningShopDisplay(void)
+ * decompiled: functions/functions/8007f3a0.c */
 void func_8007F3A0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -406,6 +409,8 @@ block_8007F4F0:
     return;
 }
 
+/* Ghidra: undefined FUN_8007f520(void)
+ * decompiled: functions/functions/8007f520.c */
 void func_8007F520(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

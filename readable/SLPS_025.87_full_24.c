@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_8002dfcc(void)
+ * decompiled: functions/functions/8002dfcc.c */
 void func_8002DFCC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1465,6 +1467,8 @@ block_8002E50C:
     return;
 }
 
+/* Ghidra: undefined FUN_8002e538(void)
+ * decompiled: functions/functions/8002e538.c */
 void func_8002E538(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2897,6 +2901,9 @@ block_8002EA9C:
     return;
 }
 
+/* FindNearestSegmentFull
+ * Ghidra: undefined FindNearestSegmentFull(void)
+ * decompiled: functions/functions/8002eac8.c */
 void func_8002EAC8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3293,6 +3300,9 @@ block_8002EBFC:
     return;
 }
 
+/* FindNearestSegment
+ * Ghidra: undefined FindNearestSegment(void)
+ * decompiled: functions/functions/8002ec30.c */
 void func_8002EC30(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

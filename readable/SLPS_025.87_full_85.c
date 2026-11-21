@@ -849,6 +849,9 @@ block_8005DA18:
     return;
 }
 
+/* LoadCLUT
+ * Ghidra: undefined LoadCLUT(void)
+ * decompiled: functions/functions/8005da38.c */
 void func_8005DA38(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1065,6 +1068,9 @@ block_8005DAEC:
     return;
 }
 
+/* InitRaceVRAM
+ * Ghidra: undefined InitRaceVRAM(void)
+ * decompiled: functions/functions/8005dafc.c */
 void func_8005DAFC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1180,6 +1186,9 @@ block_8005DB5C:
     return;
 }
 
+/* DrawSpriteFlipped
+ * Ghidra: undefined DrawSpriteFlipped(void)
+ * decompiled: functions/functions/8005db6c.c */
 void func_8005DB6C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1860,6 +1869,9 @@ block_8005DDB8:
     return;
 }
 
+/* LoadPalette
+ * Ghidra: undefined LoadPalette(void)
+ * decompiled: functions/functions/8005dde0.c */
 void func_8005DDE0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2039,6 +2051,9 @@ block_8005DE64:
     return;
 }
 
+/* ClearVRAMRegion
+ * Ghidra: undefined ClearVRAMRegion(void)
+ * decompiled: functions/functions/8005de84.c */
 void func_8005DE84(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2138,6 +2153,8 @@ block_8005DEE4:
     return;
 }
 
+/* Ghidra: undefined FUN_8005def4(void)
+ * decompiled: functions/functions/8005def4.c */
 void func_8005DEF4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2258,6 +2275,8 @@ block_8005DF3C:
     return;
 }
 
+/* Ghidra: undefined FUN_8005df90(void)
+ * decompiled: functions/functions/8005df90.c */
 void func_8005DF90(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4465,6 +4484,8 @@ void func_8005E250(CPUState* cpu)
     psx_alias_body_8005DF90(cpu, 0x8005E250u);  /* alias entry into host func_8005DF90 */
 }
 
+/* Ghidra: undefined FUN_8005e260(void)
+ * decompiled: functions/functions/8005e260.c */
 void func_8005E260(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

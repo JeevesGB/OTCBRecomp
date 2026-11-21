@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* CdRead
+ * Ghidra: int __stdcall CdRead(int sectors, u_long * buf, int mode)
+ * decompiled: functions/functions/800a829c.c */
 void func_800A829C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -618,6 +621,9 @@ block_800A8414:
     return;
 }
 
+/* CdReadSync
+ * Ghidra: int __stdcall CdReadSync(int mode, u_char * result)
+ * decompiled: functions/functions/800a8438.c */
 void func_800A8438(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1025,6 +1031,9 @@ block_800A851C:
     return;
 }
 
+/* CdReadCallback
+ * Ghidra: CdlCB __stdcall CdReadCallback(CdlCB func)
+ * decompiled: functions/functions/800a853c.c */
 void func_800A853C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1059,6 +1068,9 @@ block_800A853C:
     return;
 }
 
+/* CdReadMode
+ * Ghidra: undefined CdReadMode(void)
+ * decompiled: functions/functions/800a8550.c */
 void func_800A8550(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1093,6 +1105,9 @@ block_800A8550:
     return;
 }
 
+/* CdRead2
+ * Ghidra: int __stdcall CdRead2(long mode)
+ * decompiled: functions/functions/800a856c.c */
 void func_800A856C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1298,6 +1313,9 @@ block_800A85E0:
     return;
 }
 
+/* CDREAD2_OBJ_84
+ * Ghidra: undefined CDREAD2_OBJ_84(void)
+ * decompiled: functions/functions/800a85f0.c */
 void func_800A85F0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1355,6 +1373,9 @@ block_800A8600:
     return;
 }
 
+/* StClearRing
+ * Ghidra: void StClearRing(void)
+ * decompiled: functions/functions/800a861c.c */
 void func_800A861C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1451,6 +1472,9 @@ block_800A8654:
     return;
 }
 
+/* StopCDStream
+ * Ghidra: undefined StopCDStream(void)
+ * decompiled: functions/functions/800a867c.c */
 void func_800A867C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1646,6 +1670,9 @@ block_800A86EC:
     return;
 }
 
+/* DsSyncCallback
+ * Ghidra: DslCB __stdcall DsSyncCallback(DslCB func)
+ * decompiled: functions/functions/800a86fc.c */
 void func_800A86FC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1680,6 +1707,9 @@ block_800A86FC:
     return;
 }
 
+/* DsReadyCallback
+ * Ghidra: DslCB __stdcall DsReadyCallback(DslCB func)
+ * decompiled: functions/functions/800a8710.c */
 void func_800A8710(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1714,6 +1744,9 @@ block_800A8710:
     return;
 }
 
+/* DsStartCallback
+ * Ghidra: undefined DsStartCallback(void)
+ * decompiled: functions/functions/800a8724.c */
 void func_800A8724(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1748,6 +1781,9 @@ block_800A8724:
     return;
 }
 
+/* DsDataCallback
+ * Ghidra: _func_170 * __stdcall DsDataCallback(func * func)
+ * decompiled: functions/functions/800a8738.c */
 void func_800A8738(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1809,6 +1845,9 @@ block_800A874C:
     return;
 }
 
+/* data_ready_callback
+ * Ghidra: undefined data_ready_callback(void)
+ * decompiled: functions/functions/800a875c.c */
 void func_800A875C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1937,6 +1976,9 @@ block_800A87D0:
     return;
 }
 
+/* StGetBackloc
+ * Ghidra: int __stdcall StGetBackloc(CdlLOC * loc)
+ * decompiled: functions/functions/800a87e8.c */
 void func_800A87E8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2075,6 +2117,9 @@ block_800A8830:
     return;
 }
 
+/* StSetStream
+ * Ghidra: void __stdcall StSetStream(u_long mode, u_long start_frame, u_long end_frame, func1 * func1, func2 * func2)
+ * decompiled: functions/functions/800a884c.c */
 void func_800A884C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2184,6 +2229,9 @@ block_800A8874:
     return;
 }
 
+/* StFreeRing
+ * Ghidra: u_long __stdcall StFreeRing(u_long * base)
+ * decompiled: functions/functions/800a88dc.c */
 void func_800A88DC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2376,6 +2424,9 @@ block_800A8980:
     return;
 }
 
+/* init_ring_status
+ * Ghidra: undefined init_ring_status(void)
+ * decompiled: functions/functions/800a898c.c */
 void func_800A898C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2466,6 +2517,9 @@ block_800A89B8:
     return;
 }
 
+/* StGetNext
+ * Ghidra: u_long __stdcall StGetNext(u_long * * addr, u_long * * header)
+ * decompiled: functions/functions/800a89cc.c */
 void func_800A89CC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2672,6 +2726,8 @@ block_800A8A7C:
     return;
 }
 
+/* Ghidra: undefined FUN_800a8a8c(void)
+ * decompiled: functions/functions/800a8a8c.c */
 void func_800A8A8C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

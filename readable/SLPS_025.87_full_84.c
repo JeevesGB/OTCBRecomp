@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_8005cd6c(void)
+ * decompiled: functions/functions/8005cd6c.c */
 void func_8005CD6C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -555,6 +557,9 @@ block_8005CEDC:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* InitControllerPorts
+ * Ghidra: undefined InitControllerPorts(void)
+ * decompiled: functions/functions/8005cee4.c */
 void func_8005CEE4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1385,6 +1390,9 @@ block_8005D0C4:
     return;
 }
 
+/* InitControllers
+ * Ghidra: undefined InitControllers(void)
+ * decompiled: functions/functions/8005d0f0.c */
 void func_8005D0F0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1511,6 +1519,9 @@ block_8005D128:
     return;
 }
 
+/* InitMemoryState
+ * Ghidra: undefined InitMemoryState(void)
+ * decompiled: functions/functions/8005d138.c */
 void func_8005D138(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1562,6 +1573,8 @@ block_8005D138:
     return;
 }
 
+/* Ghidra: undefined FUN_8005d168(void)
+ * decompiled: functions/functions/8005d168.c */
 void func_8005D168(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1728,6 +1741,9 @@ block_8005D1D4:
     return;
 }
 
+/* SetHeapBase
+ * Ghidra: undefined SetHeapBase(void)
+ * decompiled: functions/functions/8005d200.c */
 void func_8005D200(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1758,6 +1774,9 @@ block_8005D200:
     return;
 }
 
+/* MemAlloc
+ * Ghidra: undefined MemAlloc(void)
+ * decompiled: functions/functions/8005d20c.c */
 void func_8005D20C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1797,6 +1816,9 @@ block_8005D20C:
     return;
 }
 
+/* GsGetWorkBase
+ * Ghidra: undefined GsGetWorkBase(void)
+ * decompiled: functions/functions/8005d22c.c */
 void func_8005D22C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1829,6 +1851,9 @@ block_8005D22C:
     return;
 }
 
+/* SetVRAMBase
+ * Ghidra: undefined SetVRAMBase(void)
+ * decompiled: functions/functions/8005d23c.c */
 void func_8005D23C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1860,6 +1885,9 @@ block_8005D23C:
     return;
 }
 
+/* MemAllocAligned
+ * Ghidra: undefined MemAllocAligned(void)
+ * decompiled: functions/functions/8005d248.c */
 void func_8005D248(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1899,6 +1927,9 @@ block_8005D248:
     return;
 }
 
+/* GetHeapEnd
+ * Ghidra: undefined GetHeapEnd(void)
+ * decompiled: functions/functions/8005d268.c */
 void func_8005D268(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1931,6 +1962,9 @@ block_8005D268:
     return;
 }
 
+/* InitHeapBlock
+ * Ghidra: undefined InitHeapBlock(void)
+ * decompiled: functions/functions/8005d278.c */
 void func_8005D278(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1971,6 +2005,9 @@ block_8005D278:
     return;
 }
 
+/* MemAllocTemp
+ * Ghidra: undefined MemAllocTemp(void)
+ * decompiled: functions/functions/8005d294.c */
 void func_8005D294(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2225,6 +2262,9 @@ block_8005D314:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* MemFreeTemp
+ * Ghidra: undefined MemFreeTemp(void)
+ * decompiled: functions/functions/8005d31c.c */
 void func_8005D31C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2676,6 +2716,8 @@ block_8005D400:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Ghidra: undefined FUN_8005d410(void)
+ * decompiled: functions/functions/8005d410.c */
 void func_8005D410(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

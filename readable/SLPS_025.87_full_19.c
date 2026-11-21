@@ -565,6 +565,8 @@ block_80029F10:
     return;
 }
 
+/* Ghidra: undefined FUN_80029f38(void)
+ * decompiled: functions/functions/80029f38.c */
 void func_80029F38(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1432,6 +1434,9 @@ block_8002A288:
     return;
 }
 
+/* State_ReplayTrackSelect
+ * Ghidra: undefined State_ReplayTrackSelect(void)
+ * decompiled: functions/functions/8002a2a4.c */
 void func_8002A2A4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2366,6 +2371,8 @@ block_8002A574:
     return;
 }
 
+/* Ghidra: undefined FUN_8002a58c(void)
+ * decompiled: functions/functions/8002a58c.c */
 void func_8002A58C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3003,6 +3010,8 @@ block_8002A840:
     return;
 }
 
+/* Ghidra: undefined FUN_8002a858(void)
+ * decompiled: functions/functions/8002a858.c */
 void func_8002A858(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

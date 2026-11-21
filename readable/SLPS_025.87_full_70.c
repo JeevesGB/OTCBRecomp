@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_80050800(void)
+ * decompiled: functions/functions/80050800.c */
 void func_80050800(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -401,6 +403,9 @@ block_800509F4:
     return;
 }
 
+/* RenderHUD
+ * Ghidra: undefined RenderHUD(void)
+ * decompiled: functions/functions/80050a04.c */
 void func_80050A04(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -805,6 +810,9 @@ block_80050B10:
     return;
 }
 
+/* UpdateHUD
+ * Ghidra: undefined UpdateHUD(void)
+ * decompiled: functions/functions/80050b28.c */
 void func_80050B28(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -840,6 +848,9 @@ block_80050B28:
     return;
 }
 
+/* UpdateCarHUD
+ * Ghidra: undefined UpdateCarHUD(void)
+ * decompiled: functions/functions/80050b3c.c */
 void func_80050B3C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1012,6 +1023,9 @@ block_80050BA8:
     return;
 }
 
+/* UpdateCarMirror
+ * Ghidra: undefined UpdateCarMirror(void)
+ * decompiled: functions/functions/80050bbc.c */
 void func_80050BBC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1313,6 +1327,9 @@ block_80050C80:
     return;
 }
 
+/* UpdateCarSpeedometer
+ * Ghidra: undefined UpdateCarSpeedometer(void)
+ * decompiled: functions/functions/80050c90.c */
 void func_80050C90(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1950,6 +1967,8 @@ block_80050E4C:
     return;
 }
 
+/* Ghidra: undefined FUN_80050e5c(void)
+ * decompiled: functions/functions/80050e5c.c */
 void func_80050E5C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2328,6 +2347,8 @@ block_80050FB4:
     return;
 }
 
+/* Ghidra: undefined FUN_80050fbc(void)
+ * decompiled: functions/functions/80050fbc.c */
 void func_80050FBC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2455,6 +2476,9 @@ block_80050FBC:
     return;
 }
 
+/* UpdateCarHUDData
+ * Ghidra: undefined UpdateCarHUDData(void)
+ * decompiled: functions/functions/80051074.c */
 void func_80051074(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2790,6 +2814,9 @@ block_80051158:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* UpdatePlayerHUD
+ * Ghidra: undefined UpdatePlayerHUD(void)
+ * decompiled: functions/functions/80051160.c */
 void func_80051160(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3101,6 +3128,9 @@ block_8005127C:
     return;
 }
 
+/* InitCarHUD
+ * Ghidra: undefined InitCarHUD(void)
+ * decompiled: functions/functions/80051294.c */
 void func_80051294(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3140,6 +3170,9 @@ block_80051294:
     return;
 }
 
+/* UpdateCarLapData
+ * Ghidra: undefined UpdateCarLapData(void)
+ * decompiled: functions/functions/800512b0.c */
 void func_800512B0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3416,6 +3449,8 @@ block_8005133C:
     return;
 }
 
+/* Ghidra: undefined FUN_8005135c(void)
+ * decompiled: functions/functions/8005135c.c */
 void func_8005135C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3706,6 +3741,9 @@ block_800514AC:
     return;
 }
 
+/* RenderTrackBackground
+ * Ghidra: undefined RenderTrackBackground(void)
+ * decompiled: functions/functions/800514dc.c */
 void func_800514DC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

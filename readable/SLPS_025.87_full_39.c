@@ -2720,6 +2720,8 @@ block_80039B54:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Ghidra: undefined FUN_80039b5c(void)
+ * decompiled: functions/functions/80039b5c.c */
 void func_80039B5C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3828,6 +3830,9 @@ block_80039EC4:
     return;
 }
 
+/* GetCarTrackDistance
+ * Ghidra: undefined GetCarTrackDistance(void)
+ * decompiled: functions/functions/80039ef0.c */
 void func_80039EF0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

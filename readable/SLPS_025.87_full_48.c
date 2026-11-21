@@ -1442,6 +1442,9 @@ block_8004102C:
     return;
 }
 
+/* UpdateCarPosition
+ * Ghidra: undefined UpdateCarPosition(void)
+ * decompiled: functions/functions/8004105c.c */
 void func_8004105C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1473,6 +1476,9 @@ block_8004105C:
     return;
 }
 
+/* UpdateCarRenderTransform
+ * Ghidra: undefined UpdateCarRenderTransform(void)
+ * decompiled: functions/functions/80041068.c */
 void func_80041068(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1507,6 +1513,9 @@ block_80041068:
     return;
 }
 
+/* UpdateCarInput
+ * Ghidra: undefined UpdateCarInput(void)
+ * decompiled: functions/functions/8004107c.c */
 void func_8004107C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1762,6 +1771,9 @@ block_80041110:
     return;
 }
 
+/* InitCarAnimation
+ * Ghidra: undefined InitCarAnimation(void)
+ * decompiled: functions/functions/8004112c.c */
 void func_8004112C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1970,6 +1982,8 @@ block_800411E0:
     return;
 }
 
+/* Ghidra: undefined FUN_800411f0(void)
+ * decompiled: functions/functions/800411f0.c */
 void func_800411F0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2160,6 +2174,9 @@ block_8004126C:
     return;
 }
 
+/* UpdateCarGears
+ * Ghidra: undefined UpdateCarGears(void)
+ * decompiled: functions/functions/8004127c.c */
 void func_8004127C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2826,6 +2843,9 @@ block_80041424:
     return;
 }
 
+/* UpdateCarLights
+ * Ghidra: undefined UpdateCarLights(void)
+ * decompiled: functions/functions/8004143c.c */
 void func_8004143C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3182,6 +3202,9 @@ block_80041540:
     return;
 }
 
+/* InitCarRenderData
+ * Ghidra: undefined InitCarRenderData(void)
+ * decompiled: functions/functions/80041550.c */
 void func_80041550(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

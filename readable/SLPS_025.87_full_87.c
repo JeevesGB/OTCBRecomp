@@ -1520,6 +1520,8 @@ block_8005F1CC:
     return;
 }
 
+/* Ghidra: undefined FUN_8005f1dc(void)
+ * decompiled: functions/functions/8005f1dc.c */
 void func_8005F1DC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2070,6 +2072,9 @@ block_8005F3C0:
     return;
 }
 
+/* InitMemoryCardOp
+ * Ghidra: undefined InitMemoryCardOp(void)
+ * decompiled: functions/functions/8005f3e8.c */
 void func_8005F3E8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2504,6 +2509,9 @@ block_8005F4EC:
     return;
 }
 
+/* State_MemoryCard
+ * Ghidra: undefined State_MemoryCard(void)
+ * decompiled: functions/functions/8005f500.c */
 void func_8005F500(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3009,6 +3017,9 @@ block_8005F658:
     return;
 }
 
+/* InitSaveOperation
+ * Ghidra: undefined InitSaveOperation(void)
+ * decompiled: functions/functions/8005f680.c */
 void func_8005F680(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

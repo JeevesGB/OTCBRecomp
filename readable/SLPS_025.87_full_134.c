@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_800813c0(void)
+ * decompiled: functions/functions/800813c0.c */
 void func_800813C0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1004,6 +1006,8 @@ block_80081820:
     return;
 }
 
+/* Ghidra: undefined FUN_80081850(void)
+ * decompiled: functions/functions/80081850.c */
 void func_80081850(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2373,6 +2377,9 @@ block_80081E84:
     return;
 }
 
+/* UpdatePartsInstall
+ * Ghidra: undefined UpdatePartsInstall(void)
+ * decompiled: functions/functions/80081eb4.c */
 void func_80081EB4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

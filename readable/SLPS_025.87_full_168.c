@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* ClearOTag
+ * Ghidra: u_long * __stdcall ClearOTag(u_long * ot, int n)
+ * decompiled: functions/functions/8009cccc.c */
 void func_8009CCCC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -249,6 +252,9 @@ block_8009CD4C:
     return;
 }
 
+/* ClearOTagR
+ * Ghidra: u_long * __stdcall ClearOTagR(u_long * ot, int n)
+ * decompiled: functions/functions/8009cd94.c */
 void func_8009CD94(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -408,6 +414,9 @@ block_8009CDF8:
     return;
 }
 
+/* DrawPrim
+ * Ghidra: void __stdcall DrawPrim(void * p)
+ * decompiled: functions/functions/8009ce40.c */
 void func_8009CE40(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -505,6 +514,9 @@ block_8009CE88:
     return;
 }
 
+/* DrawOTag
+ * Ghidra: void __stdcall DrawOTag(u_long * p)
+ * decompiled: functions/functions/8009ce9c.c */
 void func_8009CE9C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -633,6 +645,9 @@ block_8009CEFC:
     return;
 }
 
+/* PutDrawEnv
+ * Ghidra: DRAWENV * __stdcall PutDrawEnv(DRAWENV * env)
+ * decompiled: functions/functions/8009cf0c.c */
 void func_8009CF0C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -825,6 +840,9 @@ block_8009CFB0:
     return;
 }
 
+/* DrawOTagEnv
+ * Ghidra: void __stdcall DrawOTagEnv(u_long * p, DRAWENV * env)
+ * decompiled: functions/functions/8009cfcc.c */
 void func_8009CFCC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1032,6 +1050,9 @@ block_8009D088:
     return;
 }
 
+/* GetDrawEnv
+ * Ghidra: DRAWENV * __stdcall GetDrawEnv(DRAWENV * env)
+ * decompiled: functions/functions/8009d0a4.c */
 void func_8009D0A4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1101,6 +1122,9 @@ block_8009D0C4:
     return;
 }
 
+/* PutDispEnv
+ * Ghidra: DISPENV * __stdcall PutDispEnv(DISPENV * env)
+ * decompiled: functions/functions/8009d0d8.c */
 void func_8009D0D8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2947,6 +2971,9 @@ block_8009D5B4:
     return;
 }
 
+/* GetDispEnv
+ * Ghidra: DISPENV * __stdcall GetDispEnv(DISPENV * env)
+ * decompiled: functions/functions/8009d5d0.c */
 void func_8009D5D0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3015,6 +3042,9 @@ block_8009D5F0:
     return;
 }
 
+/* GetODE
+ * Ghidra: int GetODE(void)
+ * decompiled: functions/functions/8009d604.c */
 void func_8009D604(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3081,6 +3111,9 @@ block_8009D624:
     return;
 }
 
+/* SetDrawArea
+ * Ghidra: void __stdcall SetDrawArea(DR_AREA * p, RECT * r)
+ * decompiled: functions/functions/8009d634.c */
 void func_8009D634(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3200,6 +3233,9 @@ block_8009D69C:
     return;
 }
 
+/* SetDrawOffset
+ * Ghidra: void __stdcall SetDrawOffset(DR_OFFSET * p, u_short * ofs)
+ * decompiled: functions/functions/8009d6b4.c */
 void func_8009D6B4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3276,6 +3312,9 @@ block_8009D6DC:
     return;
 }
 
+/* SetDrawEnv
+ * Ghidra: void __stdcall SetDrawEnv(DR_ENV * dr_env, DRAWENV * env)
+ * decompiled: functions/functions/8009d6f4.c */
 void func_8009D6F4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

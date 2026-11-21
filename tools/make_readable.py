@@ -11,6 +11,8 @@ of each file is dead code for it. This tool produces readable/<same names>.c:
      with the temporaries that only fed them.
   3. Writes register names ($sp, $ra...) instead of cpu->gpr[29], cpu->gpr[31].
   4. Replaces the raw encoding comment with the MIPS instruction it implements.
+  5. Names each function from the Ghidra export (functions/functions.json), with
+     its signature and the path of its decompiled C, in a comment above it.
 
 Nothing is guessed: `--verify` compiles the original and the readable shard with
 the project's real compiler command and requires the machine code (.text and
@@ -125,11 +127,41 @@ def add_register_macros(text: str) -> str:
     return "\n".join(lines).rstrip("\n") + "\n\n" + undefs
 
 
-def make_readable(src: Path, dis) -> str:
+FUNC_DEF_RE = re.compile(r"^void func_([0-9A-Fa-f]{8})\(CPUState\* cpu\)[ \t]*$", re.M)
+
+
+def load_ghidra(path: Path) -> dict[int, dict]:
+    """Ghidra export (functions/functions.json): address -> {name, signature}."""
+    if not path.exists():
+        return {}
+    import json
+    return {int(f["entry"], 16): f for f in json.loads(path.read_text(encoding="utf-8"))}
+
+
+def annotate_functions(text: str, ghidra: dict[int, dict]) -> str:
+    """Put the Ghidra name, signature and decompiled-source path above each function."""
+    if not ghidra:
+        return text
+
+    def repl(m: re.Match) -> str:
+        addr = int(m.group(1), 16)
+        g = ghidra.get(addr)
+        if g is None:
+            return m.group(0)
+        sig = g["signature"].replace("*/", "* /")
+        name = g["name"]
+        label = "" if re.match(r"(FUN|LAB|thunk_FUN)_", name) else f"{name}\n * "
+        return (f"/* {label}Ghidra: {sig}\n"
+                f" * decompiled: functions/functions/{g['entry']}.c */\n" + m.group(0))
+    return FUNC_DEF_RE.sub(repl, text)
+
+
+def make_readable(src: Path, dis, ghidra: dict[int, dict] | None = None) -> str:
     text = run_unifdef(src)
     text = strip_pgxp(text)
     text = annotate(text, dis)
     text = rename_registers(text)
+    text = annotate_functions(text, ghidra or {})
     text = add_register_macros(text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     header = ("/* READABLE VIEW of generated/%s for the release build flavour.\n"
@@ -178,6 +210,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("shards", nargs="*", type=Path, help="generated/*.c files (default: all)")
     ap.add_argument("--out", type=Path, default=ROOT / "readable")
+    ap.add_argument("--ghidra", type=Path, default=ROOT / "functions" / "functions.json",
+                    help="Ghidra export used to name functions (default: functions/functions.json)")
     ap.add_argument("--build-dir", type=Path, default=ROOT / "build-release")
     ap.add_argument("--verify", action="store_true",
                     help="compile original and readable shard and require identical machine code")
@@ -185,11 +219,12 @@ def main() -> int:
 
     shards = args.shards or sorted((ROOT / "generated").glob("*.c"))
     dis = disassembler()
+    ghidra = load_ghidra(args.ghidra)
     args.out.mkdir(exist_ok=True)
     ok = True
     for s in shards:
         s = s.resolve()
-        readable = make_readable(s, dis)
+        readable = make_readable(s, dis, ghidra)
         (args.out / s.name).write_text(readable, encoding="utf-8")
         if args.verify:
             ok &= verify(s, readable, args.build_dir)

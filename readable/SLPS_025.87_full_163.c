@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* SpuSetReverbModeParam
+ * Ghidra: long __stdcall SpuSetReverbModeParam(SpuReverbAttr * attr)
+ * decompiled: functions/functions/8009929c.c */
 void func_8009929C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1541,6 +1544,9 @@ block_80099740:
     return;
 }
 
+/* _spu_setReverbAttr
+ * Ghidra: undefined _spu_setReverbAttr(void)
+ * decompiled: functions/functions/8009977c.c */
 void func_8009977C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3572,6 +3578,9 @@ block_80099C44:
     return;
 }
 
+/* SpuSetReverbDepth
+ * Ghidra: long __stdcall SpuSetReverbDepth(SpuReverbAttr * attr)
+ * decompiled: functions/functions/80099c4c.c */
 void func_80099C4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3747,6 +3756,8 @@ block_80099CBC:
     return;
 }
 
+/* Ghidra: undefined FUN_80099ccc(void)
+ * decompiled: functions/functions/80099ccc.c */
 void func_80099CCC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

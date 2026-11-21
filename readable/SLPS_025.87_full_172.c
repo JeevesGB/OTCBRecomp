@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* GetTPage
+ * Ghidra: u_short __stdcall GetTPage(int tp, int abr, int x, int y)
+ * decompiled: functions/functions/8009fe8c.c */
 void func_8009FE8C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -97,6 +100,9 @@ block_8009FE8C:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* GetClut
+ * Ghidra: u_short __stdcall GetClut(int x, int y)
+ * decompiled: functions/functions/8009fecc.c */
 void func_8009FECC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -132,6 +138,8 @@ block_8009FECC:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Ghidra: undefined FUN_8009feec(void)
+ * decompiled: functions/functions/8009feec.c */
 void func_8009FEEC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -218,6 +226,9 @@ block_8009FF0C:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* SetDrawTPage
+ * Ghidra: void __stdcall SetDrawTPage(DR_TPAGE * p, int dfe, int dtd, int tpage)
+ * decompiled: functions/functions/8009ff1c.c */
 void func_8009FF1C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -324,6 +335,9 @@ block_8009FF3C:
     return;
 }
 
+/* SetDrawMove
+ * Ghidra: void __stdcall SetDrawMove(DR_MOVE * p, RECT * rect, int x, int y)
+ * decompiled: functions/functions/8009ff4c.c */
 void func_8009FF4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -447,6 +461,9 @@ block_8009FF78:
     return;
 }
 
+/* bcopy
+ * Ghidra: void * __stdcall bcopy(uchar * param_1, uchar * param_2, int param_3)
+ * decompiled: functions/functions/8009ffac.c */
 void func_8009FFAC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -568,6 +585,9 @@ block_8009FFD8:
     return;
 }
 
+/* bzero
+ * Ghidra: void * __stdcall bzero(uchar * param_1, int param_2)
+ * decompiled: functions/functions/8009ffec.c */
 void func_8009FFEC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -689,6 +709,8 @@ block_800A0014:
     return;
 }
 
+/* Ghidra: undefined thunk_FUN_800a0038(void)
+ * decompiled: functions/functions/800a001c.c */
 void func_800A001C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -823,6 +845,9 @@ block_800A0060:
     return;
 }
 
+/* memcpy
+ * Ghidra: void * __stdcall memcpy(uchar * param_1, uchar * param_2, int param_3)
+ * decompiled: functions/functions/800a006c.c */
 void func_800A006C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -944,6 +969,9 @@ block_800A0098:
     return;
 }
 
+/* memset
+ * Ghidra: void * __stdcall memset(uchar * param_1, uchar param_2, int param_3)
+ * decompiled: functions/functions/800a00ac.c */
 void func_800A00AC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1065,6 +1093,9 @@ block_800A00D4:
     return;
 }
 
+/* rand
+ * Ghidra: int rand(void)
+ * decompiled: functions/functions/800a00dc.c */
 void func_800A00DC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1115,6 +1146,9 @@ block_800A00DC:
     return;
 }
 
+/* srand
+ * Ghidra: void __stdcall srand(uint param_1)
+ * decompiled: functions/functions/800a010c.c */
 void func_800A010C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1146,6 +1180,9 @@ block_800A010C:
     return;
 }
 
+/* strcmp
+ * Ghidra: int __stdcall strcmp(char * param_1, char * param_2)
+ * decompiled: functions/functions/800a011c.c */
 void func_800A011C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1364,6 +1401,8 @@ block_800A0178:
     return;
 }
 
+/* Ghidra: undefined FUN_800a018c(void)
+ * decompiled: functions/functions/800a018c.c */
 void func_800A018C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1487,6 +1526,9 @@ block_800A01B8:
     return;
 }
 
+/* printf
+ * Ghidra: int __stdcall printf(char * fmt, ...)
+ * decompiled: functions/functions/800a01cc.c */
 void func_800A01CC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1561,6 +1603,9 @@ block_800A01F8:
     return;
 }
 
+/* prnt
+ * Ghidra: undefined prnt(void)
+ * decompiled: functions/functions/800a020c.c */
 void func_800A020C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* SpuSetVoiceAttr
+ * Ghidra: void __stdcall SpuSetVoiceAttr(SpuVoiceAttr * arg)
+ * decompiled: functions/functions/8009a5bc.c */
 void func_8009A5BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4756,90 +4759,135 @@ block_8009AB90:
     ;  /* label compatibility */
 }
 
+/* S_SVA_OBJ_13C
+ * Ghidra: undefined S_SVA_OBJ_13C(void)
+ * decompiled: functions/functions/8009a6f8.c */
 void func_8009A6F8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A6F8u);
     psx_alias_body_8009A5BC(cpu, 0x8009A6F8u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_144
+ * Ghidra: undefined S_SVA_OBJ_144(void)
+ * decompiled: functions/functions/8009a700.c */
 void func_8009A700(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A700u);
     psx_alias_body_8009A5BC(cpu, 0x8009A700u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_14C
+ * Ghidra: undefined S_SVA_OBJ_14C(void)
+ * decompiled: functions/functions/8009a708.c */
 void func_8009A708(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A708u);
     psx_alias_body_8009A5BC(cpu, 0x8009A708u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_154
+ * Ghidra: undefined S_SVA_OBJ_154(void)
+ * decompiled: functions/functions/8009a710.c */
 void func_8009A710(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A710u);
     psx_alias_body_8009A5BC(cpu, 0x8009A710u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_15C
+ * Ghidra: undefined S_SVA_OBJ_15C(void)
+ * decompiled: functions/functions/8009a718.c */
 void func_8009A718(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A718u);
     psx_alias_body_8009A5BC(cpu, 0x8009A718u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_164
+ * Ghidra: undefined S_SVA_OBJ_164(void)
+ * decompiled: functions/functions/8009a720.c */
 void func_8009A720(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A720u);
     psx_alias_body_8009A5BC(cpu, 0x8009A720u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_16C
+ * Ghidra: undefined S_SVA_OBJ_16C(void)
+ * decompiled: functions/functions/8009a728.c */
 void func_8009A728(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A728u);
     psx_alias_body_8009A5BC(cpu, 0x8009A728u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_21C
+ * Ghidra: undefined S_SVA_OBJ_21C(void)
+ * decompiled: functions/functions/8009a7d8.c */
 void func_8009A7D8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A7D8u);
     psx_alias_body_8009A5BC(cpu, 0x8009A7D8u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_224
+ * Ghidra: undefined S_SVA_OBJ_224(void)
+ * decompiled: functions/functions/8009a7e0.c */
 void func_8009A7E0(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A7E0u);
     psx_alias_body_8009A5BC(cpu, 0x8009A7E0u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_22C
+ * Ghidra: undefined S_SVA_OBJ_22C(void)
+ * decompiled: functions/functions/8009a7e8.c */
 void func_8009A7E8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A7E8u);
     psx_alias_body_8009A5BC(cpu, 0x8009A7E8u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_234
+ * Ghidra: undefined S_SVA_OBJ_234(void)
+ * decompiled: functions/functions/8009a7f0.c */
 void func_8009A7F0(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A7F0u);
     psx_alias_body_8009A5BC(cpu, 0x8009A7F0u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_23C
+ * Ghidra: undefined S_SVA_OBJ_23C(void)
+ * decompiled: functions/functions/8009a7f8.c */
 void func_8009A7F8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A7F8u);
     psx_alias_body_8009A5BC(cpu, 0x8009A7F8u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_244
+ * Ghidra: undefined S_SVA_OBJ_244(void)
+ * decompiled: functions/functions/8009a800.c */
 void func_8009A800(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A800u);
     psx_alias_body_8009A5BC(cpu, 0x8009A800u);  /* alias entry into host func_8009A5BC */
 }
 
+/* S_SVA_OBJ_24C
+ * Ghidra: undefined S_SVA_OBJ_24C(void)
+ * decompiled: functions/functions/8009a808.c */
 void func_8009A808(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A808u);
     psx_alias_body_8009A5BC(cpu, 0x8009A808u);  /* alias entry into host func_8009A5BC */
 }
 
+/* _spu_note2pitch
+ * Ghidra: undefined _spu_note2pitch(void)
+ * decompiled: functions/functions/8009abbc.c */
 void func_8009ABBC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5052,6 +5100,9 @@ block_8009AC84:
     return;
 }
 
+/* _spu_pitch2note
+ * Ghidra: undefined _spu_pitch2note(void)
+ * decompiled: functions/functions/8009ac8c.c */
 void func_8009AC8C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5468,6 +5519,9 @@ block_8009AD7C:
     return;
 }
 
+/* SpuGetVoiceVolume
+ * Ghidra: void __stdcall SpuGetVoiceVolume(int vNum, short * volL, short * volR)
+ * decompiled: functions/functions/8009adbc.c */
 void func_8009ADBC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5623,6 +5677,9 @@ block_8009AE14:
     return;
 }
 
+/* SpuGetVoiceEnvelope
+ * Ghidra: void __stdcall SpuGetVoiceEnvelope(int vNum, short * envx)
+ * decompiled: functions/functions/8009ae1c.c */
 void func_8009AE1C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5659,6 +5716,9 @@ block_8009AE1C:
     return;
 }
 
+/* start
+ * Ghidra: undefined start(void)
+ * decompiled: functions/functions/8009ae3c.c */
 void func_8009AE3C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5831,6 +5891,9 @@ block_8009AEE0:
     return;
 }
 
+/* __main
+ * Ghidra: undefined __main(void)
+ * decompiled: functions/functions/8009aee4.c */
 void func_8009AEE4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

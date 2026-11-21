@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* UpdateCarFadeIn
+ * Ghidra: undefined UpdateCarFadeIn(void)
+ * decompiled: functions/functions/8006f4cc.c */
 void func_8006F4CC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2465,6 +2468,8 @@ block_8006FE68:
     return;
 }
 
+/* Ghidra: undefined FUN_8006fe98(void)
+ * decompiled: functions/functions/8006fe98.c */
 void func_8006FE98(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

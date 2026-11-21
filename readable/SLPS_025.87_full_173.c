@@ -2658,156 +2658,234 @@ block_800A0870:
     ;  /* label compatibility */
 }
 
+/* PRNT_OBJ_AC
+ * Ghidra: undefined PRNT_OBJ_AC(void)
+ * decompiled: functions/functions/800a02b8.c */
 void func_800A02B8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A02B8u);
     psx_alias_body_800A020C(cpu, 0x800A02B8u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_BC
+ * Ghidra: undefined PRNT_OBJ_BC(void)
+ * decompiled: functions/functions/800a02c8.c */
 void func_800A02C8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A02C8u);
     psx_alias_body_800A020C(cpu, 0x800A02C8u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_C4
+ * Ghidra: undefined PRNT_OBJ_C4(void)
+ * decompiled: functions/functions/800a02d0.c */
 void func_800A02D0(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A02D0u);
     psx_alias_body_800A020C(cpu, 0x800A02D0u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_E0
+ * Ghidra: undefined PRNT_OBJ_E0(void)
+ * decompiled: functions/functions/800a02ec.c */
 void func_800A02EC(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A02ECu);
     psx_alias_body_800A020C(cpu, 0x800A02ECu);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_E8
+ * Ghidra: undefined PRNT_OBJ_E8(void)
+ * decompiled: functions/functions/800a02f4.c */
 void func_800A02F4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A02F4u);
     psx_alias_body_800A020C(cpu, 0x800A02F4u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_F0
+ * Ghidra: undefined PRNT_OBJ_F0(void)
+ * decompiled: functions/functions/800a02fc.c */
 void func_800A02FC(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A02FCu);
     psx_alias_body_800A020C(cpu, 0x800A02FCu);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_178
+ * Ghidra: undefined PRNT_OBJ_178(void)
+ * decompiled: functions/functions/800a0384.c */
 void func_800A0384(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0384u);
     psx_alias_body_800A020C(cpu, 0x800A0384u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_180
+ * Ghidra: undefined PRNT_OBJ_180(void)
+ * decompiled: functions/functions/800a038c.c */
 void func_800A038C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A038Cu);
     psx_alias_body_800A020C(cpu, 0x800A038Cu);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_1DC
+ * Ghidra: undefined PRNT_OBJ_1DC(void)
+ * decompiled: functions/functions/800a03e8.c */
 void func_800A03E8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A03E8u);
     psx_alias_body_800A020C(cpu, 0x800A03E8u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_1E4
+ * Ghidra: undefined PRNT_OBJ_1E4(void)
+ * decompiled: functions/functions/800a03f0.c */
 void func_800A03F0(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A03F0u);
     psx_alias_body_800A020C(cpu, 0x800A03F0u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_1EC
+ * Ghidra: undefined PRNT_OBJ_1EC(void)
+ * decompiled: functions/functions/800a03f8.c */
 void func_800A03F8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A03F8u);
     psx_alias_body_800A020C(cpu, 0x800A03F8u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_1F4
+ * Ghidra: undefined PRNT_OBJ_1F4(void)
+ * decompiled: functions/functions/800a0400.c */
 void func_800A0400(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0400u);
     psx_alias_body_800A020C(cpu, 0x800A0400u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_210
+ * Ghidra: undefined PRNT_OBJ_210(void)
+ * decompiled: functions/functions/800a041c.c */
 void func_800A041C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A041Cu);
     psx_alias_body_800A020C(cpu, 0x800A041Cu);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_214
+ * Ghidra: undefined PRNT_OBJ_214(void)
+ * decompiled: functions/functions/800a0420.c */
 void func_800A0420(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0420u);
     psx_alias_body_800A020C(cpu, 0x800A0420u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_258
+ * Ghidra: undefined PRNT_OBJ_258(void)
+ * decompiled: functions/functions/800a0464.c */
 void func_800A0464(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0464u);
     psx_alias_body_800A020C(cpu, 0x800A0464u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_294
+ * Ghidra: undefined PRNT_OBJ_294(void)
+ * decompiled: functions/functions/800a04a0.c */
 void func_800A04A0(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A04A0u);
     psx_alias_body_800A020C(cpu, 0x800A04A0u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_298
+ * Ghidra: undefined PRNT_OBJ_298(void)
+ * decompiled: functions/functions/800a04a4.c */
 void func_800A04A4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A04A4u);
     psx_alias_body_800A020C(cpu, 0x800A04A4u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_2CC
+ * Ghidra: undefined PRNT_OBJ_2CC(void)
+ * decompiled: functions/functions/800a04d8.c */
 void func_800A04D8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A04D8u);
     psx_alias_body_800A020C(cpu, 0x800A04D8u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_2DC
+ * Ghidra: undefined PRNT_OBJ_2DC(void)
+ * decompiled: functions/functions/800a04e8.c */
 void func_800A04E8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A04E8u);
     psx_alias_body_800A020C(cpu, 0x800A04E8u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_33C
+ * Ghidra: undefined PRNT_OBJ_33C(void)
+ * decompiled: functions/functions/800a0548.c */
 void func_800A0548(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0548u);
     psx_alias_body_800A020C(cpu, 0x800A0548u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_340
+ * Ghidra: undefined PRNT_OBJ_340(void)
+ * decompiled: functions/functions/800a054c.c */
 void func_800A054C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A054Cu);
     psx_alias_body_800A020C(cpu, 0x800A054Cu);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_374
+ * Ghidra: undefined PRNT_OBJ_374(void)
+ * decompiled: functions/functions/800a0580.c */
 void func_800A0580(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0580u);
     psx_alias_body_800A020C(cpu, 0x800A0580u);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_380
+ * Ghidra: undefined PRNT_OBJ_380(void)
+ * decompiled: functions/functions/800a058c.c */
 void func_800A058C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A058Cu);
     psx_alias_body_800A020C(cpu, 0x800A058Cu);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_630
+ * Ghidra: undefined PRNT_OBJ_630(void)
+ * decompiled: functions/functions/800a083c.c */
 void func_800A083C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A083Cu);
     psx_alias_body_800A020C(cpu, 0x800A083Cu);  /* alias entry into host func_800A020C */
 }
 
+/* PRNT_OBJ_644
+ * Ghidra: undefined PRNT_OBJ_644(void)
+ * decompiled: functions/functions/800a0850.c */
 void func_800A0850(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0850u);
     psx_alias_body_800A020C(cpu, 0x800A0850u);  /* alias entry into host func_800A020C */
 }
 
+/* toupper
+ * Ghidra: char __stdcall toupper(char param_1)
+ * decompiled: functions/functions/800a08ac.c */
 void func_800A08AC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2892,6 +2970,9 @@ block_800A08D4:
     return;
 }
 
+/* tolower
+ * Ghidra: char __stdcall tolower(char param_1)
+ * decompiled: functions/functions/800a08e0.c */
 void func_800A08E0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2977,6 +3058,9 @@ block_800A0908:
     return;
 }
 
+/* memchr
+ * Ghidra: void * __stdcall memchr(uchar * param_1, uchar param_2, int param_3)
+ * decompiled: functions/functions/800a091c.c */
 void func_800A091C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3172,6 +3256,9 @@ block_800A0964:
     return;
 }
 
+/* _putchar
+ * Ghidra: undefined _putchar(void)
+ * decompiled: functions/functions/800a096c.c */
 void func_800A096C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3510,6 +3597,9 @@ block_800A0A58:
     return;
 }
 
+/* _putchar_flash
+ * Ghidra: undefined _putchar_flash(void)
+ * decompiled: functions/functions/800a0a68.c */
 void func_800A0A68(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3613,6 +3703,9 @@ block_800A0A94:
     return;
 }
 
+/* putchar
+ * Ghidra: void __stdcall putchar(char param_1)
+ * decompiled: functions/functions/800a0aa4.c */
 void func_800A0AA4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

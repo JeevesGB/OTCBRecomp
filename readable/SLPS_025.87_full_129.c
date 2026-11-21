@@ -2222,6 +2222,9 @@ block_8007E254:
     return;
 }
 
+/* UpdateReplayPlayback2
+ * Ghidra: undefined UpdateReplayPlayback2(void)
+ * decompiled: functions/functions/8007e27c.c */
 void func_8007E27C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

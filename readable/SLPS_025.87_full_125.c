@@ -1558,6 +1558,9 @@ void func_8007AC84(CPUState* cpu)
     psx_alias_body_8007AAEC(cpu, 0x8007AC84u);  /* alias entry into host func_8007AAEC */
 }
 
+/* State_GhostCarSelect
+ * Ghidra: undefined State_GhostCarSelect(void)
+ * decompiled: functions/functions/8007adf8.c */
 void func_8007ADF8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

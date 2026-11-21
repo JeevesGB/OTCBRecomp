@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* SpuClearReverbWorkArea
+ * Ghidra: long __stdcall SpuClearReverbWorkArea(long mode)
+ * decompiled: functions/functions/80099cfc.c */
 void func_80099CFC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -593,6 +596,9 @@ block_80099E6C:
     return;
 }
 
+/* SpuSetKey
+ * Ghidra: void __stdcall SpuSetKey(long on_off, ulong voice_bit)
+ * decompiled: functions/functions/80099e9c.c */
 void func_80099E9C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1050,6 +1056,9 @@ block_8009A050:
     return;
 }
 
+/* SpuRead
+ * Ghidra: ulong __stdcall SpuRead(uchar * addr, ulong size)
+ * decompiled: functions/functions/8009a05c.c */
 void func_8009A05C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1198,6 +1207,9 @@ block_8009A0A8:
     return;
 }
 
+/* SpuSetTransferStartAddr
+ * Ghidra: ulong __stdcall SpuSetTransferStartAddr(ulong addr)
+ * decompiled: functions/functions/8009a0bc.c */
 void func_8009A0BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1328,6 +1340,9 @@ block_8009A108:
     return;
 }
 
+/* SpuSetTransferMode
+ * Ghidra: long __stdcall SpuSetTransferMode(long mode)
+ * decompiled: functions/functions/8009a11c.c */
 void func_8009A11C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1444,6 +1459,9 @@ block_8009A138:
     return;
 }
 
+/* SpuIsTransferCompleted
+ * Ghidra: long __stdcall SpuIsTransferCompleted(long flag)
+ * decompiled: functions/functions/8009a14c.c */
 void func_8009A14C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1719,6 +1737,8 @@ block_8009A1DC:
     return;
 }
 
+/* Ghidra: undefined FUN_8009a1fc(void)
+ * decompiled: functions/functions/8009a1fc.c */
 void func_8009A1FC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1811,6 +1831,8 @@ block_8009A21C:
     return;
 }
 
+/* Ghidra: undefined FUN_8009a224(void)
+ * decompiled: functions/functions/8009a224.c */
 void func_8009A224(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1847,6 +1869,9 @@ block_8009A224:
     return;
 }
 
+/* SpuSetCommonAttr
+ * Ghidra: void __stdcall SpuSetCommonAttr(SpuCommonAttr * attr)
+ * decompiled: functions/functions/8009a23c.c */
 void func_8009A23C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4650,96 +4675,144 @@ block_8009A5B0:
     ;  /* label compatibility */
 }
 
+/* S_SCA_OBJ_58
+ * Ghidra: undefined S_SCA_OBJ_58(void)
+ * decompiled: functions/functions/8009a294.c */
 void func_8009A294(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A294u);
     psx_alias_body_8009A23C(cpu, 0x8009A294u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_60
+ * Ghidra: undefined S_SCA_OBJ_60(void)
+ * decompiled: functions/functions/8009a29c.c */
 void func_8009A29C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A29Cu);
     psx_alias_body_8009A23C(cpu, 0x8009A29Cu);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_68
+ * Ghidra: undefined S_SCA_OBJ_68(void)
+ * decompiled: functions/functions/8009a2a4.c */
 void func_8009A2A4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A2A4u);
     psx_alias_body_8009A23C(cpu, 0x8009A2A4u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_70
+ * Ghidra: undefined S_SCA_OBJ_70(void)
+ * decompiled: functions/functions/8009a2ac.c */
 void func_8009A2AC(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A2ACu);
     psx_alias_body_8009A23C(cpu, 0x8009A2ACu);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_78
+ * Ghidra: undefined S_SCA_OBJ_78(void)
+ * decompiled: functions/functions/8009a2b4.c */
 void func_8009A2B4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A2B4u);
     psx_alias_body_8009A23C(cpu, 0x8009A2B4u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_80
+ * Ghidra: undefined S_SCA_OBJ_80(void)
+ * decompiled: functions/functions/8009a2bc.c */
 void func_8009A2BC(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A2BCu);
     psx_alias_body_8009A23C(cpu, 0x8009A2BCu);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_88
+ * Ghidra: undefined S_SCA_OBJ_88(void)
+ * decompiled: functions/functions/8009a2c4.c */
 void func_8009A2C4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A2C4u);
     psx_alias_body_8009A23C(cpu, 0x8009A2C4u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_90
+ * Ghidra: undefined S_SCA_OBJ_90(void)
+ * decompiled: functions/functions/8009a2cc.c */
 void func_8009A2CC(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A2CCu);
     psx_alias_body_8009A23C(cpu, 0x8009A2CCu);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_118
+ * Ghidra: undefined S_SCA_OBJ_118(void)
+ * decompiled: functions/functions/8009a354.c */
 void func_8009A354(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A354u);
     psx_alias_body_8009A23C(cpu, 0x8009A354u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_120
+ * Ghidra: undefined S_SCA_OBJ_120(void)
+ * decompiled: functions/functions/8009a35c.c */
 void func_8009A35C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A35Cu);
     psx_alias_body_8009A23C(cpu, 0x8009A35Cu);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_128
+ * Ghidra: undefined S_SCA_OBJ_128(void)
+ * decompiled: functions/functions/8009a364.c */
 void func_8009A364(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A364u);
     psx_alias_body_8009A23C(cpu, 0x8009A364u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_130
+ * Ghidra: undefined S_SCA_OBJ_130(void)
+ * decompiled: functions/functions/8009a36c.c */
 void func_8009A36C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A36Cu);
     psx_alias_body_8009A23C(cpu, 0x8009A36Cu);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_138
+ * Ghidra: undefined S_SCA_OBJ_138(void)
+ * decompiled: functions/functions/8009a374.c */
 void func_8009A374(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A374u);
     psx_alias_body_8009A23C(cpu, 0x8009A374u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_140
+ * Ghidra: undefined S_SCA_OBJ_140(void)
+ * decompiled: functions/functions/8009a37c.c */
 void func_8009A37C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A37Cu);
     psx_alias_body_8009A23C(cpu, 0x8009A37Cu);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_148
+ * Ghidra: undefined S_SCA_OBJ_148(void)
+ * decompiled: functions/functions/8009a384.c */
 void func_8009A384(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A384u);
     psx_alias_body_8009A23C(cpu, 0x8009A384u);  /* alias entry into host func_8009A23C */
 }
 
+/* S_SCA_OBJ_150
+ * Ghidra: undefined S_SCA_OBJ_150(void)
+ * decompiled: functions/functions/8009a38c.c */
 void func_8009A38C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009A38Cu);

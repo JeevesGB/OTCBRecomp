@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* SsUtKeyOn
+ * Ghidra: short __stdcall SsUtKeyOn(short param_1, short param_2, short param_3, short param_4, short param_5, short param_6, short param_7)
+ * decompiled: functions/functions/8009310c.c */
 void func_8009310C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -938,6 +941,9 @@ block_80093434:
     return;
 }
 
+/* SsUtKeyOff
+ * Ghidra: short __stdcall SsUtKeyOff(short param_1, short param_2, short param_3, short param_4, short param_5)
+ * decompiled: functions/functions/80093464.c */
 void func_80093464(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1333,6 +1339,9 @@ block_80093594:
     return;
 }
 
+/* SsUtKeyOnV
+ * Ghidra: short __stdcall SsUtKeyOnV(short voice, short vabId, short prog, short tone, short note, short fine, short voll, short volr)
+ * decompiled: functions/functions/800935ac.c */
 void func_800935AC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2216,6 +2225,9 @@ block_800938D8:
     return;
 }
 
+/* SsUtKeyOffV
+ * Ghidra: short __stdcall SsUtKeyOffV(short voice)
+ * decompiled: functions/functions/80093908.c */
 void func_80093908(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2390,6 +2402,9 @@ block_8009396C:
     return;
 }
 
+/* SsUtSetReverbDelay
+ * Ghidra: void __stdcall SsUtSetReverbDelay(short param_1)
+ * decompiled: functions/functions/8009397c.c */
 void func_8009397C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2465,6 +2480,9 @@ block_800939A8:
     return;
 }
 
+/* SsUtSetReverbDepth
+ * Ghidra: void __stdcall SsUtSetReverbDepth(short param_1, short param_2)
+ * decompiled: functions/functions/800939bc.c */
 void func_800939BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2589,6 +2607,9 @@ block_80093A38:
     return;
 }
 
+/* SsUtSetReverbType
+ * Ghidra: short __stdcall SsUtSetReverbType(short param_1)
+ * decompiled: functions/functions/80093a4c.c */
 void func_80093A4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2849,6 +2870,9 @@ block_80093AD8:
     return;
 }
 
+/* SsUtGetReverbType
+ * Ghidra: short SsUtGetReverbType(void)
+ * decompiled: functions/functions/80093ae8.c */
 void func_80093AE8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2881,6 +2905,9 @@ block_80093AE8:
     return;
 }
 
+/* SsUtSetReverbFeedback
+ * Ghidra: void __stdcall SsUtSetReverbFeedback(short param_1)
+ * decompiled: functions/functions/80093afc.c */
 void func_80093AFC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2956,6 +2983,8 @@ block_80093B28:
     return;
 }
 
+/* Ghidra: undefined FUN_80093b3c(void)
+ * decompiled: functions/functions/80093b3c.c */
 void func_80093B3C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3015,6 +3044,9 @@ block_80093B4C:
     return;
 }
 
+/* InitReverbSystem
+ * Ghidra: undefined InitReverbSystem(void)
+ * decompiled: functions/functions/80093b5c.c */
 void func_80093B5C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3074,6 +3106,9 @@ block_80093B6C:
     return;
 }
 
+/* SsUtSetVagAtr
+ * Ghidra: short __stdcall SsUtSetVagAtr(short param_1, short param_2, short param_3, VagAtr * param_4)
+ * decompiled: functions/functions/80093b7c.c */
 void func_80093B7C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3368,6 +3403,9 @@ block_80093D2C:
     return;
 }
 
+/* SsUtGetDetVVol
+ * Ghidra: short __stdcall SsUtGetDetVVol(short param_1, short * param_2, short * param_3)
+ * decompiled: functions/functions/80093d4c.c */
 void func_80093D4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3483,6 +3521,9 @@ block_80093D78:
     return;
 }
 
+/* SsUtSetDetVVol
+ * Ghidra: short __stdcall SsUtSetDetVVol(short param_1, short param_2, short param_3)
+ * decompiled: functions/functions/80093d88.c */
 void func_80093D88(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3604,6 +3645,9 @@ block_80093DE4:
     return;
 }
 
+/* SsUtGetVVol
+ * Ghidra: short __stdcall SsUtGetVVol(short param_1, short * param_2, short * param_3)
+ * decompiled: functions/functions/80093dec.c */
 void func_80093DEC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3780,6 +3824,9 @@ block_80093E84:
     return;
 }
 
+/* SsUtSetVVol
+ * Ghidra: short __stdcall SsUtSetVVol(short param_1, short param_2, short param_3)
+ * decompiled: functions/functions/80093e98.c */
 void func_80093E98(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

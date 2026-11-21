@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* LIBMCRD_OBJ_DF4
+ * Ghidra: undefined LIBMCRD_OBJ_DF4(void)
+ * decompiled: functions/functions/800a28f0.c */
 void func_800A28F0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -946,42 +949,63 @@ block_800A2A1C:
     ;  /* label compatibility */
 }
 
+/* LIBMCRD_OBJ_E34
+ * Ghidra: undefined LIBMCRD_OBJ_E34(void)
+ * decompiled: functions/functions/800a2930.c */
 void func_800A2930(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2930u);
     psx_alias_body_800A28F0(cpu, 0x800A2930u);  /* alias entry into host func_800A28F0 */
 }
 
+/* LIBMCRD_OBJ_E50
+ * Ghidra: undefined LIBMCRD_OBJ_E50(void)
+ * decompiled: functions/functions/800a294c.c */
 void func_800A294C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A294Cu);
     psx_alias_body_800A28F0(cpu, 0x800A294Cu);  /* alias entry into host func_800A28F0 */
 }
 
+/* LIBMCRD_OBJ_E90
+ * Ghidra: undefined LIBMCRD_OBJ_E90(void)
+ * decompiled: functions/functions/800a298c.c */
 void func_800A298C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A298Cu);
     psx_alias_body_800A28F0(cpu, 0x800A298Cu);  /* alias entry into host func_800A28F0 */
 }
 
+/* LIBMCRD_OBJ_EAC
+ * Ghidra: undefined LIBMCRD_OBJ_EAC(void)
+ * decompiled: functions/functions/800a29a8.c */
 void func_800A29A8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A29A8u);
     psx_alias_body_800A28F0(cpu, 0x800A29A8u);  /* alias entry into host func_800A28F0 */
 }
 
+/* LIBMCRD_OBJ_EFC
+ * Ghidra: undefined LIBMCRD_OBJ_EFC(void)
+ * decompiled: functions/functions/800a29f8.c */
 void func_800A29F8(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A29F8u);
     psx_alias_body_800A28F0(cpu, 0x800A29F8u);  /* alias entry into host func_800A28F0 */
 }
 
+/* LIBMCRD_OBJ_F1C
+ * Ghidra: undefined LIBMCRD_OBJ_F1C(void)
+ * decompiled: functions/functions/800a2a18.c */
 void func_800A2A18(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2A18u);
     psx_alias_body_800A28F0(cpu, 0x800A2A18u);  /* alias entry into host func_800A28F0 */
 }
 
+/* MemCardWriteFile
+ * Ghidra: long __stdcall MemCardWriteFile(long chan, char * file, ulong * adrs, long ofs, long bytes)
+ * decompiled: functions/functions/800a2a30.c */
 void func_800A2A30(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1346,6 +1370,9 @@ block_800A2B20:
     return;
 }
 
+/* LIBMCRD_OBJ_104C
+ * Ghidra: undefined LIBMCRD_OBJ_104C(void)
+ * decompiled: functions/functions/800a2b48.c */
 void func_800A2B48(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2248,42 +2275,63 @@ block_800A2C74:
     ;  /* label compatibility */
 }
 
+/* LIBMCRD_OBJ_108C
+ * Ghidra: undefined LIBMCRD_OBJ_108C(void)
+ * decompiled: functions/functions/800a2b88.c */
 void func_800A2B88(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2B88u);
     psx_alias_body_800A2B48(cpu, 0x800A2B88u);  /* alias entry into host func_800A2B48 */
 }
 
+/* LIBMCRD_OBJ_10A8
+ * Ghidra: undefined LIBMCRD_OBJ_10A8(void)
+ * decompiled: functions/functions/800a2ba4.c */
 void func_800A2BA4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2BA4u);
     psx_alias_body_800A2B48(cpu, 0x800A2BA4u);  /* alias entry into host func_800A2B48 */
 }
 
+/* LIBMCRD_OBJ_10E8
+ * Ghidra: undefined LIBMCRD_OBJ_10E8(void)
+ * decompiled: functions/functions/800a2be4.c */
 void func_800A2BE4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2BE4u);
     psx_alias_body_800A2B48(cpu, 0x800A2BE4u);  /* alias entry into host func_800A2B48 */
 }
 
+/* LIBMCRD_OBJ_1104
+ * Ghidra: undefined LIBMCRD_OBJ_1104(void)
+ * decompiled: functions/functions/800a2c00.c */
 void func_800A2C00(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2C00u);
     psx_alias_body_800A2B48(cpu, 0x800A2C00u);  /* alias entry into host func_800A2B48 */
 }
 
+/* LIBMCRD_OBJ_1154
+ * Ghidra: undefined LIBMCRD_OBJ_1154(void)
+ * decompiled: functions/functions/800a2c50.c */
 void func_800A2C50(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2C50u);
     psx_alias_body_800A2B48(cpu, 0x800A2C50u);  /* alias entry into host func_800A2B48 */
 }
 
+/* LIBMCRD_OBJ_1174
+ * Ghidra: undefined LIBMCRD_OBJ_1174(void)
+ * decompiled: functions/functions/800a2c70.c */
 void func_800A2C70(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A2C70u);
     psx_alias_body_800A2B48(cpu, 0x800A2C70u);  /* alias entry into host func_800A2B48 */
 }
 
+/* MemCardGetDirentry
+ * Ghidra: long __stdcall MemCardGetDirentry(long chan, char * name, DIRENTRY * dir, long * files, long ofs, long max)
+ * decompiled: functions/functions/800a2c88.c */
 void func_800A2C88(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3111,6 +3159,9 @@ block_800A2EB8:
     return;
 }
 
+/* MemCardCallback
+ * Ghidra: MemCB __stdcall MemCardCallback(MemCB func)
+ * decompiled: functions/functions/800a2ee8.c */
 void func_800A2EE8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3145,6 +3196,9 @@ block_800A2EE8:
     return;
 }
 
+/* MemCardSync
+ * Ghidra: long __stdcall MemCardSync(long mode, long * cmds, long * rslt)
+ * decompiled: functions/functions/800a2efc.c */
 void func_800A2EFC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3624,6 +3678,9 @@ block_800A3010:
     return;
 }
 
+/* MemCardCreateFile
+ * Ghidra: long __stdcall MemCardCreateFile(long chan, char * file, long blocks)
+ * decompiled: functions/functions/800a3018.c */
 void func_800A3018(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

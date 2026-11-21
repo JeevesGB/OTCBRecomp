@@ -39,6 +39,18 @@ def load_symbols(path: Path) -> dict[str, int]:
     return {f["name"]: int(f["pc"]) for f in data.get("func", []) if "name" in f}
 
 
+def load_ghidra_names(path: Path) -> dict[str, int]:
+    """name -> address from the Ghidra export (skips auto-generated FUN_/LAB_ names)."""
+    if not path.exists():
+        return {}
+    import json
+    out = {}
+    for f in json.loads(path.read_text(encoding="utf-8")):
+        if not re.match(r"(FUN|LAB|thunk_FUN)_", f["name"]):
+            out.setdefault(f["name"], int(f["entry"], 16))
+    return out
+
+
 def shard_files(gen_dir: Path) -> list[Path]:
     return sorted(gen_dir.glob("*_full_*.c"))
 
@@ -269,7 +281,8 @@ def main() -> int:
     ap.add_argument("--list", action="store_true", help="list all function addresses")
     args = ap.parse_args()
 
-    symbols = load_symbols(args.symbols)
+    symbols = load_ghidra_names(ROOT / "functions" / "functions.json")
+    symbols.update(load_symbols(args.symbols))  # symbols.toml wins over Ghidra
     by_addr = {v: k for k, v in symbols.items()}
 
     if args.list:

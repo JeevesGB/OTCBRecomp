@@ -2638,6 +2638,8 @@ block_80047C38:
     return;
 }
 
+/* Ghidra: undefined FUN_80047c4c(void)
+ * decompiled: functions/functions/80047c4c.c */
 void func_80047C4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3247,6 +3249,8 @@ block_80047DB0:
     return;
 }
 
+/* Ghidra: undefined FUN_80047db8(void)
+ * decompiled: functions/functions/80047db8.c */
 void func_80047DB8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

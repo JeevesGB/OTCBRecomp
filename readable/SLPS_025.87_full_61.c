@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_80049830(void)
+ * decompiled: functions/functions/80049830.c */
 void func_80049830(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1080,6 +1082,8 @@ block_80049D30:
     return;
 }
 
+/* Ghidra: undefined FUN_80049d54(void)
+ * decompiled: functions/functions/80049d54.c */
 void func_80049D54(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1324,6 +1328,8 @@ block_80049E10:
     return;
 }
 
+/* Ghidra: undefined FUN_80049e4c(void)
+ * decompiled: functions/functions/80049e4c.c */
 void func_80049E4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1800,6 +1806,8 @@ block_80049F94:
     return;
 }
 
+/* Ghidra: undefined FUN_80049fa0(void)
+ * decompiled: functions/functions/80049fa0.c */
 void func_80049FA0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2233,6 +2241,9 @@ block_8004A0D4:
     return;
 }
 
+/* UpdateCarBrakes
+ * Ghidra: undefined UpdateCarBrakes(void)
+ * decompiled: functions/functions/8004a108.c */
 void func_8004A108(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2945,6 +2956,8 @@ block_8004A360:
     return;
 }
 
+/* Ghidra: undefined FUN_8004a37c(void)
+ * decompiled: functions/functions/8004a37c.c */
 void func_8004A37C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3133,6 +3146,8 @@ block_8004A468:
     return;
 }
 
+/* Ghidra: undefined FUN_8004a478(void)
+ * decompiled: functions/functions/8004a478.c */
 void func_8004A478(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3498,6 +3513,9 @@ block_8004A5AC:
     return;
 }
 
+/* UpdateCarEngine
+ * Ghidra: undefined UpdateCarEngine(void)
+ * decompiled: functions/functions/8004a5c4.c */
 void func_8004A5C4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

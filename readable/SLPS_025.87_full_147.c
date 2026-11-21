@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_8008b878(void)
+ * decompiled: functions/functions/8008b878.c */
 void func_8008B878(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1031,6 +1033,9 @@ block_8008BCBC:
     return;
 }
 
+/* UpdateChampionshipStandings2
+ * Ghidra: undefined UpdateChampionshipStandings2(void)
+ * decompiled: functions/functions/8008bcec.c */
 void func_8008BCEC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1972,6 +1977,9 @@ block_8008BFA4:
     return;
 }
 
+/* State_ChampionshipStandings
+ * Ghidra: undefined State_ChampionshipStandings(void)
+ * decompiled: functions/functions/8008bfc4.c */
 void func_8008BFC4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3248,6 +3256,8 @@ block_8008C324:
     return;
 }
 
+/* Ghidra: undefined FUN_8008c340(void)
+ * decompiled: functions/functions/8008c340.c */
 void func_8008C340(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

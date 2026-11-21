@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_80080ab0(void)
+ * decompiled: functions/functions/80080ab0.c */
 void func_80080AB0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -744,6 +746,9 @@ block_80080D84:
     return;
 }
 
+/* UpdatePartsSelect
+ * Ghidra: undefined UpdatePartsSelect(void)
+ * decompiled: functions/functions/80080db4.c */
 void func_80080DB4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2060,6 +2065,9 @@ void func_80080F20(CPUState* cpu)
     psx_alias_body_80080DB4(cpu, 0x80080F20u);  /* alias entry into host func_80080DB4 */
 }
 
+/* InitPartsSelect
+ * Ghidra: undefined InitPartsSelect(void)
+ * decompiled: functions/functions/80080fb0.c */
 void func_80080FB0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2473,6 +2481,9 @@ block_800810B0:
     return;
 }
 
+/* State_PartsSelect
+ * Ghidra: undefined State_PartsSelect(void)
+ * decompiled: functions/functions/800810cc.c */
 void func_800810CC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

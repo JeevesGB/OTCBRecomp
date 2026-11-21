@@ -1272,6 +1272,8 @@ block_800312B4:
     return;
 }
 
+/* Ghidra: undefined FUN_800312c4(void)
+ * decompiled: functions/functions/800312c4.c */
 void func_800312C4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1820,6 +1822,9 @@ block_80031438:
     return;
 }
 
+/* SetCameraMatrix
+ * Ghidra: undefined SetCameraMatrix(void)
+ * decompiled: functions/functions/80031448.c */
 void func_80031448(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2153,6 +2158,9 @@ block_80031578:
     return;
 }
 
+/* InitTrackRenderer
+ * Ghidra: undefined InitTrackRenderer(void)
+ * decompiled: functions/functions/80031588.c */
 void func_80031588(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2333,6 +2341,9 @@ block_800315C8:
     return;
 }
 
+/* UpdateCamera
+ * Ghidra: undefined UpdateCamera(void)
+ * decompiled: functions/functions/800315d8.c */
 void func_800315D8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2488,6 +2499,9 @@ block_8003162C:
     return;
 }
 
+/* InitCarCamera
+ * Ghidra: undefined InitCarCamera(void)
+ * decompiled: functions/functions/8003163c.c */
 void func_8003163C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2695,6 +2709,9 @@ block_800316CC:
     return;
 }
 
+/* UpdateCameraPosition
+ * Ghidra: undefined UpdateCameraPosition(void)
+ * decompiled: functions/functions/80031708.c */
 void func_80031708(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3350,6 +3367,9 @@ block_80031950:
     return;
 }
 
+/* UpdateCameraMatrix
+ * Ghidra: undefined UpdateCameraMatrix(void)
+ * decompiled: functions/functions/80031968.c */
 void func_80031968(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

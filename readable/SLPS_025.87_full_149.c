@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* State_CarUnlock
+ * Ghidra: undefined State_CarUnlock(void)
+ * decompiled: functions/functions/8008d154.c */
 void func_8008D154(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1678,6 +1681,9 @@ block_8008D660:
     return;
 }
 
+/* State_PostRace
+ * Ghidra: undefined State_PostRace(void)
+ * decompiled: functions/functions/8008d680.c */
 void func_8008D680(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3385,6 +3391,8 @@ void func_8008D860(CPUState* cpu)
     psx_alias_body_8008D680(cpu, 0x8008D860u);  /* alias entry into host func_8008D680 */
 }
 
+/* Ghidra: undefined FUN_8008d8cc(void)
+ * decompiled: functions/functions/8008d8cc.c */
 void func_8008D8CC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

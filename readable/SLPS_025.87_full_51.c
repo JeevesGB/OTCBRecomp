@@ -3007,6 +3007,8 @@ void func_80042DC0(CPUState* cpu)
     psx_alias_body_80042A54(cpu, 0x80042DC0u);  /* alias entry into host func_80042A54 */
 }
 
+/* Ghidra: undefined FUN_80042ec0(void)
+ * decompiled: functions/functions/80042ec0.c */
 void func_80042EC0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3514,6 +3516,8 @@ block_80043008:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Ghidra: undefined FUN_80043010(void)
+ * decompiled: functions/functions/80043010.c */
 void func_80043010(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* sprintf
+ * Ghidra: int __stdcall sprintf(char * buffer, char * fmt, ...)
+ * decompiled: functions/functions/800a0bcc.c */
 void func_800A0BCC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5675,78 +5678,117 @@ block_800A1418:
     ;  /* label compatibility */
 }
 
+/* SPRINTF_OBJ_2C0
+ * Ghidra: undefined SPRINTF_OBJ_2C0(void)
+ * decompiled: functions/functions/800a0e8c.c */
 void func_800A0E8C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0E8Cu);
     psx_alias_body_800A0BCC(cpu, 0x800A0E8Cu);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_2CC
+ * Ghidra: undefined SPRINTF_OBJ_2CC(void)
+ * decompiled: functions/functions/800a0e98.c */
 void func_800A0E98(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0E98u);
     psx_alias_body_800A0BCC(cpu, 0x800A0E98u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_2D8
+ * Ghidra: undefined SPRINTF_OBJ_2D8(void)
+ * decompiled: functions/functions/800a0ea4.c */
 void func_800A0EA4(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0EA4u);
     psx_alias_body_800A0BCC(cpu, 0x800A0EA4u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_304
+ * Ghidra: undefined SPRINTF_OBJ_304(void)
+ * decompiled: functions/functions/800a0ed0.c */
 void func_800A0ED0(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0ED0u);
     psx_alias_body_800A0BCC(cpu, 0x800A0ED0u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_35C
+ * Ghidra: undefined SPRINTF_OBJ_35C(void)
+ * decompiled: functions/functions/800a0f28.c */
 void func_800A0F28(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A0F28u);
     psx_alias_body_800A0BCC(cpu, 0x800A0F28u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_47C
+ * Ghidra: undefined SPRINTF_OBJ_47C(void)
+ * decompiled: functions/functions/800a1048.c */
 void func_800A1048(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A1048u);
     psx_alias_body_800A0BCC(cpu, 0x800A1048u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_57C
+ * Ghidra: undefined SPRINTF_OBJ_57C(void)
+ * decompiled: functions/functions/800a1148.c */
 void func_800A1148(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A1148u);
     psx_alias_body_800A0BCC(cpu, 0x800A1148u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_590
+ * Ghidra: undefined SPRINTF_OBJ_590(void)
+ * decompiled: functions/functions/800a115c.c */
 void func_800A115C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A115Cu);
     psx_alias_body_800A0BCC(cpu, 0x800A115Cu);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_59C
+ * Ghidra: undefined SPRINTF_OBJ_59C(void)
+ * decompiled: functions/functions/800a1168.c */
 void func_800A1168(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A1168u);
     psx_alias_body_800A0BCC(cpu, 0x800A1168u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_6A8
+ * Ghidra: undefined SPRINTF_OBJ_6A8(void)
+ * decompiled: functions/functions/800a1274.c */
 void func_800A1274(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A1274u);
     psx_alias_body_800A0BCC(cpu, 0x800A1274u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_6C8
+ * Ghidra: undefined SPRINTF_OBJ_6C8(void)
+ * decompiled: functions/functions/800a1294.c */
 void func_800A1294(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A1294u);
     psx_alias_body_800A0BCC(cpu, 0x800A1294u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_754
+ * Ghidra: undefined SPRINTF_OBJ_754(void)
+ * decompiled: functions/functions/800a1320.c */
 void func_800A1320(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A1320u);
     psx_alias_body_800A0BCC(cpu, 0x800A1320u);  /* alias entry into host func_800A0BCC */
 }
 
+/* SPRINTF_OBJ_788
+ * Ghidra: undefined SPRINTF_OBJ_788(void)
+ * decompiled: functions/functions/800a1354.c */
 void func_800A1354(CPUState* cpu)
 {
     debug_server_log_call_entry(0x800A1354u);

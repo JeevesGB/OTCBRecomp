@@ -3557,6 +3557,9 @@ block_80034318:
     return;
 }
 
+/* UpdateVSCamera
+ * Ghidra: undefined UpdateVSCamera(void)
+ * decompiled: functions/functions/80034330.c */
 void func_80034330(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

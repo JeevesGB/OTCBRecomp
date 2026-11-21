@@ -3129,6 +3129,9 @@ block_800871DC:
     return;
 }
 
+/* InitGearTuningDisplay
+ * Ghidra: undefined InitGearTuningDisplay(void)
+ * decompiled: functions/functions/800871fc.c */
 void func_800871FC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3592,6 +3595,9 @@ block_80087324:
     return;
 }
 
+/* InitGearDisplay
+ * Ghidra: undefined InitGearDisplay(void)
+ * decompiled: functions/functions/80087340.c */
 void func_80087340(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

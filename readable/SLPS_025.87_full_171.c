@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Krom2RawAdd2
+ * Ghidra: long __stdcall Krom2RawAdd2(ushort param_1)
+ * decompiled: functions/functions/8009f45c.c */
 void func_8009F45C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -327,6 +330,9 @@ block_8009F4F4:
     return;
 }
 
+/* kanjitrans
+ * Ghidra: undefined kanjitrans(void)
+ * decompiled: functions/functions/8009f508.c */
 void func_8009F508(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3523,48 +3529,72 @@ block_8009FA24:
     ;  /* label compatibility */
 }
 
+/* KTRANS_OBJ_F8
+ * Ghidra: undefined KTRANS_OBJ_F8(void)
+ * decompiled: functions/functions/8009f554.c */
 void func_8009F554(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009F554u);
     psx_alias_body_8009F508(cpu, 0x8009F554u);  /* alias entry into host func_8009F508 */
 }
 
+/* KTRANS_OBJ_1B0
+ * Ghidra: undefined KTRANS_OBJ_1B0(void)
+ * decompiled: functions/functions/8009f60c.c */
 void func_8009F60C(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009F60Cu);
     psx_alias_body_8009F508(cpu, 0x8009F60Cu);  /* alias entry into host func_8009F508 */
 }
 
+/* KTRANS_OBJ_22C
+ * Ghidra: undefined KTRANS_OBJ_22C(void)
+ * decompiled: functions/functions/8009f688.c */
 void func_8009F688(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009F688u);
     psx_alias_body_8009F508(cpu, 0x8009F688u);  /* alias entry into host func_8009F508 */
 }
 
+/* KTRANS_OBJ_2AC
+ * Ghidra: undefined KTRANS_OBJ_2AC(void)
+ * decompiled: functions/functions/8009f708.c */
 void func_8009F708(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009F708u);
     psx_alias_body_8009F508(cpu, 0x8009F708u);  /* alias entry into host func_8009F508 */
 }
 
+/* KTRANS_OBJ_328
+ * Ghidra: undefined KTRANS_OBJ_328(void)
+ * decompiled: functions/functions/8009f784.c */
 void func_8009F784(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009F784u);
     psx_alias_body_8009F508(cpu, 0x8009F784u);  /* alias entry into host func_8009F508 */
 }
 
+/* KTRANS_OBJ_3D8
+ * Ghidra: undefined KTRANS_OBJ_3D8(void)
+ * decompiled: functions/functions/8009f834.c */
 void func_8009F834(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009F834u);
     psx_alias_body_8009F508(cpu, 0x8009F834u);  /* alias entry into host func_8009F508 */
 }
 
+/* KTRANS_OBJ_4A8
+ * Ghidra: undefined KTRANS_OBJ_4A8(void)
+ * decompiled: functions/functions/8009f904.c */
 void func_8009F904(CPUState* cpu)
 {
     debug_server_log_call_entry(0x8009F904u);
     psx_alias_body_8009F508(cpu, 0x8009F904u);  /* alias entry into host func_8009F508 */
 }
 
+/* hankanjitrans
+ * Ghidra: undefined hankanjitrans(void)
+ * decompiled: functions/functions/8009fa34.c */
 void func_8009FA34(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4017,6 +4047,9 @@ block_8009FB58:
     return;
 }
 
+/* BreakDraw
+ * Ghidra: u_long * BreakDraw(void)
+ * decompiled: functions/functions/8009fb6c.c */
 void func_8009FB6C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4179,6 +4212,9 @@ block_8009FBF8:
     return;
 }
 
+/* IsIdleGPU
+ * Ghidra: int __stdcall IsIdleGPU(int max_count)
+ * decompiled: functions/functions/8009fc00.c */
 void func_8009FC00(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4341,6 +4377,9 @@ block_8009FC58:
     return;
 }
 
+/* ContinueDraw
+ * Ghidra: void __stdcall ContinueDraw(u_long * insaddr, u_long * contaddr)
+ * decompiled: functions/functions/8009fc60.c */
 void func_8009FC60(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4644,6 +4683,9 @@ block_8009FD6C:
     return;
 }
 
+/* SetDefDrawEnv
+ * Ghidra: DRAWENV * __stdcall SetDefDrawEnv(DRAWENV * env, int x, int y, int w, int h)
+ * decompiled: functions/functions/8009fd8c.c */
 void func_8009FD8C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4821,6 +4863,9 @@ block_8009FE04:
     return;
 }
 
+/* SetDefDispEnv
+ * Ghidra: DISPENV * __stdcall SetDefDispEnv(DISPENV * env, int x, int y, int w, int h)
+ * decompiled: functions/functions/8009fe4c.c */
 void func_8009FE4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

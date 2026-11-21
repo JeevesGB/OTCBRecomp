@@ -2088,6 +2088,8 @@ void func_800461D8(CPUState* cpu)
     psx_alias_body_80045C38(cpu, 0x800461D8u);  /* alias entry into host func_80045C38 */
 }
 
+/* Ghidra: undefined FUN_800463dc(void)
+ * decompiled: functions/functions/800463dc.c */
 void func_800463DC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2130,6 +2132,8 @@ block_800463DC:
     return;
 }
 
+/* Ghidra: undefined FUN_800463fc(void)
+ * decompiled: functions/functions/800463fc.c */
 void func_800463FC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2162,6 +2166,8 @@ block_800463FC:
     return;
 }
 
+/* Ghidra: undefined FUN_8004640c(void)
+ * decompiled: functions/functions/8004640c.c */
 void func_8004640C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2195,6 +2201,9 @@ block_8004640C:
     return;
 }
 
+/* HasSavedReplay
+ * Ghidra: undefined HasSavedReplay(void)
+ * decompiled: functions/functions/8004641c.c */
 void func_8004641C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2260,6 +2269,8 @@ block_8004642C:
     return;
 }
 
+/* Ghidra: undefined FUN_8004643c(void)
+ * decompiled: functions/functions/8004643c.c */
 void func_8004643C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2608,6 +2619,8 @@ block_800464CC:
     return;
 }
 
+/* Ghidra: undefined FUN_800464d8(void)
+ * decompiled: functions/functions/800464d8.c */
 void func_800464D8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2787,6 +2800,8 @@ block_80046558:
     return;
 }
 
+/* Ghidra: undefined FUN_80046584(void)
+ * decompiled: functions/functions/80046584.c */
 void func_80046584(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3541,6 +3556,8 @@ block_800467E0:
     return;
 }
 
+/* Ghidra: undefined FUN_800467f4(void)
+ * decompiled: functions/functions/800467f4.c */
 void func_800467F4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4376,6 +4393,8 @@ block_80046A0C:
     return;
 }
 
+/* Ghidra: undefined FUN_80046a30(void)
+ * decompiled: functions/functions/80046a30.c */
 void func_80046A30(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

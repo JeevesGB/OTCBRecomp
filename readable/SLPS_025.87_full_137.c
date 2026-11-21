@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* UpdateCarTuning
+ * Ghidra: undefined UpdateCarTuning(void)
+ * decompiled: functions/functions/800838e0.c */
 void func_800838E0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2958,6 +2961,9 @@ block_80084038:
     return;
 }
 
+/* State_CarTuning
+ * Ghidra: undefined State_CarTuning(void)
+ * decompiled: functions/functions/8008404c.c */
 void func_8008404C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

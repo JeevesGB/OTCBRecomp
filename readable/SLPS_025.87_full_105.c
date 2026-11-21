@@ -42,6 +42,8 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* Ghidra: undefined FUN_8006cee8(void)
+ * decompiled: functions/functions/8006cee8.c */
 void func_8006CEE8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -534,6 +536,8 @@ block_8006D120:
     return;
 }
 
+/* Ghidra: undefined FUN_8006d150(void)
+ * decompiled: functions/functions/8006d150.c */
 void func_8006D150(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1623,6 +1627,9 @@ block_8006D684:
     return;
 }
 
+/* UpdateReplayCarSelect
+ * Ghidra: undefined UpdateReplayCarSelect(void)
+ * decompiled: functions/functions/8006d6b4.c */
 void func_8006D6B4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2780,6 +2787,9 @@ void func_8006D7E8(CPUState* cpu)
     psx_alias_body_8006D6B4(cpu, 0x8006D7E8u);  /* alias entry into host func_8006D6B4 */
 }
 
+/* InitReplayCarSelect
+ * Ghidra: undefined InitReplayCarSelect(void)
+ * decompiled: functions/functions/8006d888.c */
 void func_8006D888(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3182,6 +3192,9 @@ block_8006D980:
     return;
 }
 
+/* State_ReplayCarSelect
+ * Ghidra: undefined State_ReplayCarSelect(void)
+ * decompiled: functions/functions/8006d9a4.c */
 void func_8006D9A4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

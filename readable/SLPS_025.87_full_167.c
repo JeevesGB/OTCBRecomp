@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* SetVideoMode
+ * Ghidra: undefined SetVideoMode(void)
+ * decompiled: functions/functions/8009bc4c.c */
 void func_8009BC4C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -76,6 +79,8 @@ block_8009BC4C:
     return;
 }
 
+/* Ghidra: undefined FUN_8009bc60(void)
+ * decompiled: functions/functions/8009bc60.c */
 void func_8009BC60(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -135,6 +140,9 @@ block_8009BC7C:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* InitGeom
+ * Ghidra: void InitGeom(void)
+ * decompiled: functions/functions/8009bc84.c */
 void func_8009BC84(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -261,6 +269,9 @@ block_8009BC94:
     return;
 }
 
+/* SquareRoot0
+ * Ghidra: long __stdcall SquareRoot0(long a)
+ * decompiled: functions/functions/8009bd0c.c */
 void func_8009BD0C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -458,6 +469,9 @@ block_8009BD88:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* ApplyMatrixLV
+ * Ghidra: VECTOR * __stdcall ApplyMatrixLV(MATRIX * m, VECTOR * $2, VECTOR * $3)
+ * decompiled: functions/functions/8009bd9c.c */
 void func_8009BD9C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -966,6 +980,9 @@ block_8009BED0:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* ApplyRotMatrixLV
+ * Ghidra: VECTOR * __stdcall ApplyRotMatrixLV(VECTOR * $2, VECTOR * $3)
+ * decompiled: functions/functions/8009befc.c */
 void func_8009BEFC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1450,6 +1467,9 @@ block_8009C008:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* ApplyMatrix
+ * Ghidra: VECTOR * __stdcall ApplyMatrix(MATRIX * m, SVECTOR * $2, VECTOR * $3)
+ * decompiled: functions/functions/8009c03c.c */
 void func_8009C03C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1531,6 +1551,9 @@ block_8009C03C:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* SetGTEClip
+ * Ghidra: undefined SetGTEClip(void)
+ * decompiled: functions/functions/8009c08c.c */
 void func_8009C08C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1570,6 +1593,9 @@ block_8009C08C:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* SetGTEParams
+ * Ghidra: undefined SetGTEParams(void)
+ * decompiled: functions/functions/8009c0ac.c */
 void func_8009C0AC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1600,6 +1626,9 @@ block_8009C0AC:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* LightColor
+ * Ghidra: void __stdcall LightColor(VECTOR * $2, VECTOR * $3)
+ * decompiled: functions/functions/8009c0bc.c */
 void func_8009C0BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1656,6 +1685,9 @@ block_8009C0BC:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* DpqColorLight
+ * Ghidra: void __stdcall DpqColorLight(VECTOR * $2, CVECTOR * $3, long p, CVECTOR * v2)
+ * decompiled: functions/functions/8009c0e4.c */
 void func_8009C0E4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1711,6 +1743,9 @@ block_8009C0E4:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* DpqColor3
+ * Ghidra: void __stdcall DpqColor3(CVECTOR * $2, CVECTOR * $3, CVECTOR * v2, long p, CVECTOR * v3, CVECTOR * v4, CVECTOR * v5)
+ * decompiled: functions/functions/8009c10c.c */
 void func_8009C10C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1779,6 +1814,9 @@ block_8009C10C:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Intpl
+ * Ghidra: void __stdcall Intpl(VECTOR * $2, long p, CVECTOR * $3)
+ * decompiled: functions/functions/8009c148.c */
 void func_8009C148(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1830,6 +1868,9 @@ block_8009C148:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Square12
+ * Ghidra: VECTOR * __stdcall Square12(VECTOR * $2, VECTOR * $3)
+ * decompiled: functions/functions/8009c16c.c */
 void func_8009C16C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1886,6 +1927,9 @@ block_8009C16C:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Square0
+ * Ghidra: VECTOR * __stdcall Square0(VECTOR * $2, VECTOR * $3)
+ * decompiled: functions/functions/8009c194.c */
 void func_8009C194(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1941,6 +1985,9 @@ block_8009C194:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* AverageZ3
+ * Ghidra: long __stdcall AverageZ3(long sz0, long sz1, long sz2)
+ * decompiled: functions/functions/8009c1bc.c */
 void func_8009C1BC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1988,6 +2035,9 @@ block_8009C1BC:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* AverageZ4
+ * Ghidra: long __stdcall AverageZ4(long sz0, long sz1, long sz2, long sz3)
+ * decompiled: functions/functions/8009c1dc.c */
 void func_8009C1DC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2039,6 +2089,9 @@ block_8009C1DC:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* OuterProduct12
+ * Ghidra: void __stdcall OuterProduct12(VECTOR * $2, VECTOR * $3, VECTOR * v2)
+ * decompiled: functions/functions/8009c200.c */
 void func_8009C200(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2136,6 +2189,9 @@ block_8009C200:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* OuterProduct0
+ * Ghidra: void __stdcall OuterProduct0(VECTOR * $2, VECTOR * $3, VECTOR * v2)
+ * decompiled: functions/functions/8009c258.c */
 void func_8009C258(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2233,6 +2289,9 @@ block_8009C258:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* Lzc
+ * Ghidra: long __stdcall Lzc(long data)
+ * decompiled: functions/functions/8009c2b0.c */
 void func_8009C2B0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2271,6 +2330,9 @@ block_8009C2B0:
     ;  /* label compatibility: C requires a statement after the last label */
 }
 
+/* ratan2
+ * Ghidra: long __stdcall ratan2(long y, long x)
+ * decompiled: functions/functions/8009c2cc.c */
 void func_8009C2CC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3048,6 +3110,9 @@ block_8009C438:
     return;
 }
 
+/* _patch_gte
+ * Ghidra: undefined _patch_gte(void)
+ * decompiled: functions/functions/8009c44c.c */
 void func_8009C44C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3291,6 +3356,9 @@ block_8009C4E4:
     return;
 }
 
+/* ResetGraph
+ * Ghidra: int __stdcall ResetGraph(int mode)
+ * decompiled: functions/functions/8009c52c.c */
 void func_8009C52C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3736,6 +3804,9 @@ block_8009C68C:
     return;
 }
 
+/* SetGraphDebug
+ * Ghidra: int __stdcall SetGraphDebug(int level)
+ * decompiled: functions/functions/8009c6a0.c */
 void func_8009C6A0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3851,6 +3922,9 @@ block_8009C6EC:
     return;
 }
 
+/* SetGraphQueue
+ * Ghidra: undefined SetGraphQueue(void)
+ * decompiled: functions/functions/8009c6fc.c */
 void func_8009C6FC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4046,6 +4120,9 @@ block_8009C788:
     return;
 }
 
+/* GetGraphDebug
+ * Ghidra: int GetGraphDebug(void)
+ * decompiled: functions/functions/8009c7a0.c */
 void func_8009C7A0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4077,6 +4154,9 @@ block_8009C7A0:
     return;
 }
 
+/* DrawSyncCallback
+ * Ghidra: u_long __stdcall DrawSyncCallback(func * func)
+ * decompiled: functions/functions/8009c7b0.c */
 void func_8009C7B0(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4184,6 +4264,9 @@ block_8009C7F4:
     return;
 }
 
+/* SetDispMask
+ * Ghidra: void __stdcall SetDispMask(int mask)
+ * decompiled: functions/functions/8009c810.c */
 void func_8009C810(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4391,6 +4474,9 @@ block_8009C894:
     return;
 }
 
+/* DrawSync
+ * Ghidra: int __stdcall DrawSync(int mode)
+ * decompiled: functions/functions/8009c8a8.c */
 void func_8009C8A8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4514,6 +4600,9 @@ block_8009C900:
     return;
 }
 
+/* SYS_OBJ_3E4
+ * Ghidra: undefined SYS_OBJ_3E4(void)
+ * decompiled: functions/functions/8009c910.c */
 void func_8009C910(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -4916,6 +5005,9 @@ block_8009CA1C:
     return;
 }
 
+/* ClearImage
+ * Ghidra: int __stdcall ClearImage(RECT * rect, u_char r, u_char g, u_char b)
+ * decompiled: functions/functions/8009ca2c.c */
 void func_8009CA2C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5042,6 +5134,9 @@ block_8009CAA0:
     return;
 }
 
+/* ClearImage2
+ * Ghidra: int __stdcall ClearImage2(RECT * rect, u_char r, u_char g, u_char b)
+ * decompiled: functions/functions/8009cabc.c */
 void func_8009CABC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5174,6 +5269,9 @@ block_8009CB38:
     return;
 }
 
+/* LoadImage
+ * Ghidra: int __stdcall LoadImage(RECT * rect, u_long * p)
+ * decompiled: functions/functions/8009cb54.c */
 void func_8009CB54(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5275,6 +5373,9 @@ block_8009CBA0:
     return;
 }
 
+/* StoreImage
+ * Ghidra: int __stdcall StoreImage(RECT * rect, u_long * p)
+ * decompiled: functions/functions/8009cbb4.c */
 void func_8009CBB4(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -5376,6 +5477,9 @@ block_8009CC00:
     return;
 }
 
+/* MoveImage
+ * Ghidra: int __stdcall MoveImage(RECT * rect, int x, int y)
+ * decompiled: functions/functions/8009cc14.c */
 void func_8009CC14(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

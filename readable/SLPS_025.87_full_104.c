@@ -1296,6 +1296,9 @@ block_8006C520:
     return;
 }
 
+/* RenderCourseSelect
+ * Ghidra: undefined RenderCourseSelect(void)
+ * decompiled: functions/functions/8006c548.c */
 void func_8006C548(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2395,6 +2398,9 @@ block_8006CAAC:
     return;
 }
 
+/* InitCourseSelect
+ * Ghidra: undefined InitCourseSelect(void)
+ * decompiled: functions/functions/8006cadc.c */
 void func_8006CADC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2789,6 +2795,9 @@ block_8006CBC4:
     return;
 }
 
+/* UpdateCourseSelect
+ * Ghidra: undefined UpdateCourseSelect(void)
+ * decompiled: functions/functions/8006cbec.c */
 void func_8006CBEC(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3457,6 +3466,9 @@ block_8006CD64:
     return;
 }
 
+/* State_CourseSelect
+ * Ghidra: undefined State_CourseSelect(void)
+ * decompiled: functions/functions/8006cd78.c */
 void func_8006CD78(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

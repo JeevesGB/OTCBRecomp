@@ -255,6 +255,8 @@ block_80035D3C:
     return;
 }
 
+/* Ghidra: undefined FUN_80035d50(void)
+ * decompiled: functions/functions/80035d50.c */
 void func_80035D50(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

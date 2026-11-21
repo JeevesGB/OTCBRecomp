@@ -42,6 +42,9 @@
 /* psx-pgxp-dataflow-v2 */
 /* psx-pgxp-demand-regions-v2; psx-pgxp-operations-v2 */
 
+/* RenderGhostCarSelect
+ * Ghidra: undefined RenderGhostCarSelect(void)
+ * decompiled: functions/functions/80079f38.c */
 void func_80079F38(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1144,6 +1147,8 @@ block_8007A3B8:
     return;
 }
 
+/* Ghidra: undefined FUN_8007a3e8(void)
+ * decompiled: functions/functions/8007a3e8.c */
 void func_8007A3E8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2207,6 +2212,9 @@ block_8007A7F8:
     return;
 }
 
+/* UpdateGhostCarSelect
+ * Ghidra: undefined UpdateGhostCarSelect(void)
+ * decompiled: functions/functions/8007a828.c */
 void func_8007A828(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

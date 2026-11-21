@@ -879,6 +879,9 @@ block_80082468:
     return;
 }
 
+/* InitPartsInstallDisplay
+ * Ghidra: undefined InitPartsInstallDisplay(void)
+ * decompiled: functions/functions/80082494.c */
 void func_80082494(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -1340,6 +1343,9 @@ block_800825BC:
     return;
 }
 
+/* State_PartsInstall
+ * Ghidra: undefined State_PartsInstall(void)
+ * decompiled: functions/functions/800825d8.c */
 void func_800825D8(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

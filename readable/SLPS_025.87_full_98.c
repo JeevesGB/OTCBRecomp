@@ -1475,6 +1475,9 @@ void func_80068124(CPUState* cpu)
     psx_alias_body_80067B5C(cpu, 0x80068124u);  /* alias entry into host func_80067B5C */
 }
 
+/* HasTuningPart
+ * Ghidra: undefined HasTuningPart(void)
+ * decompiled: functions/functions/80068428.c */
 void func_80068428(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -2061,6 +2064,8 @@ block_80068674:
     return;
 }
 
+/* Ghidra: undefined FUN_8006867c(void)
+ * decompiled: functions/functions/8006867c.c */
 void func_8006867C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))
@@ -3928,6 +3933,8 @@ block_80068B84:
     return;
 }
 
+/* Ghidra: undefined FUN_80068b8c(void)
+ * decompiled: functions/functions/80068b8c.c */
 void func_80068B8C(CPUState* cpu)
 {
 #if defined(PSX_ENABLE_BLOCK_CYCLES) && (defined(__GNUC__) || defined(__clang__))

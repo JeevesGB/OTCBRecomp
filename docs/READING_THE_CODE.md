@@ -68,6 +68,29 @@ cmake -S . -B build-readable -G Ninja -DCMAKE_BUILD_TYPE=Release \
 flavour; if you build with PSX_COSIM or PGXP on, use `generated/`. On Windows
 `unifdef` is available from MSYS2 (`pacman -S unifdef`).
 
+### Function names and decompiled C (from Ghidra)
+
+`functions/functions.json` and `functions/functions/<address>.c` (exported from
+Ghidra) hold real names and decompiler-style C. `make_readable.py` uses them:
+each function in `readable/` gets a comment with its Ghidra name, signature and
+the path of its decompiled source:
+
+```c
+/* MenuRender_VSRaceSetup
+ * Ghidra: undefined MenuRender_VSRaceSetup(void)
+ * decompiled: functions/functions/8002737c.c */
+void func_8002737C(CPUState* cpu)
+```
+
+Coverage: 1,538 of the 3,165 recompiled functions have a Ghidra entry (1,116 with
+a real name such as `RenderRace` or `UpdateCarLights`, 422 still `FUN_...`).
+The other 1,627 have no export yet. `show_func.py` accepts these names too
+(`python3 tools/show_func.py RenderRace`); `symbols.toml` wins if both define one.
+
+The Ghidra C is for reading only. It is pseudo-C (`param_1`, `iVar4`, hardware
+macros) and will not compile or run as the game; the recompiled code is what
+runs. It is a good reference for *what* a function does.
+
 ## Why `generated/` is hard to read (background)
 
 The files must not be edited by hand (see `psxrecomp/CLAUDE.md`, rule 4); they
