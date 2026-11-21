@@ -1,0 +1,63 @@
+/* Function: S_SCA_OBJ_150 */
+/* Address: 8009a38c */
+
+/* WARNING: Removing unreachable block (ram,0x8009a39c) */
+/* WARNING: Removing unreachable block (ram,0x8009a3b0) */
+/* WARNING: Removing unreachable block (ram,0x8009a3b8) */
+/* WARNING: Removing unreachable block (ram,0x8009a3bc) */
+
+void S_SCA_OBJ_150(int param_1)
+
+{
+  uint in_t1;
+  int in_t2;
+  
+  *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x182) = *(ushort *)(param_1 + 6) & 0x7fff;
+  if ((in_t2 != 0) || ((in_t1 & 0x40) != 0)) {
+    *(undefined2 *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1b0) = *(undefined2 *)(param_1 + 0x10);
+  }
+  if ((in_t2 != 0) || ((in_t1 & 0x80) != 0)) {
+    *(undefined2 *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1b2) = *(undefined2 *)(param_1 + 0x12);
+  }
+  if ((in_t2 != 0) || ((in_t1 & 0x400) != 0)) {
+    *(undefined2 *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1b4) = *(undefined2 *)(param_1 + 0x1c);
+  }
+  if ((in_t2 != 0) || ((in_t1 & 0x800) != 0)) {
+    *(undefined2 *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1b6) = *(undefined2 *)(param_1 + 0x1e);
+  }
+  if ((in_t2 != 0) || ((in_t1 & 0x100) != 0)) {
+    if (*(int *)(param_1 + 0x14) == 0) {
+      S_SCA_OBJ_274();
+      return;
+    }
+    *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) =
+         *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) | 4;
+  }
+  if ((in_t2 != 0) || ((in_t1 & 0x200) != 0)) {
+    if (*(int *)(param_1 + 0x18) == 0) {
+      S_SCA_OBJ_2C8();
+      return;
+    }
+    *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) =
+         *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) | 1;
+  }
+  if ((in_t2 != 0) || ((in_t1 & 0x1000) != 0)) {
+    if (*(int *)(param_1 + 0x20) == 0) {
+      S_SCA_OBJ_31C();
+      return;
+    }
+    *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) =
+         *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) | 8;
+  }
+  if ((in_t2 != 0) || ((in_t1 & 0x2000) != 0)) {
+    if (*(int *)(param_1 + 0x24) == 0) {
+      S_SCA_OBJ_370();
+      return;
+    }
+    *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) =
+         *(ushort *)(PTR_VOICE_00_LEFT_RIGHT_800c3d50 + 0x1aa) | 2;
+  }
+  return;
+}
+
+

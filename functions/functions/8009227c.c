@@ -1,0 +1,11 @@
+/* Function: SsSeqStop */
+/* Address: 8009227c */
+
+void SsSeqStop(short param_1)
+
+{
+  _SsSndStop((int)param_1,0);
+  return;
+}
+
+

@@ -1,0 +1,14 @@
+/* Function: Intpl */
+/* Address: 8009c148 */
+
+void Intpl(VECTOR *_2,long p,CVECTOR *_3)
+
+{
+  gte_ldlvl(_2);
+  gte_ldIR0(p);
+  gte_intpl_b();
+  gte_strgb(_3);
+  return;
+}
+
+

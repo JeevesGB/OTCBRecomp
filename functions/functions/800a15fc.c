@@ -1,0 +1,13 @@
+/* Function: OpenEvent */
+/* Address: 800a15fc */
+
+long OpenEvent(ulong param_1,long param_2,long param_3,func *func)
+
+{
+  long lVar1;
+  
+  lVar1 = (*(code *)&SUB_000000b0)();
+  return lVar1;
+}
+
+

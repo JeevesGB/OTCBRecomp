@@ -1,0 +1,151 @@
+/* Function: SetupRace_Type0 */
+/* Address: 80088f84 */
+
+void SetupRace_Type0(int param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  uint uVar3;
+  uint *puVar4;
+  undefined1 uVar5;
+  char cVar6;
+  undefined2 uVar7;
+  ushort uVar8;
+  undefined1 *puVar9;
+  int iVar10;
+  undefined4 uVar11;
+  undefined1 auStack_f8 [16];
+  undefined1 auStack_e8 [20];
+  undefined1 local_d4;
+  undefined1 local_d2;
+  undefined1 local_d0;
+  undefined1 local_ce;
+  undefined1 local_cc;
+  undefined1 local_ca;
+  ushort local_ac;
+  undefined2 local_98;
+  undefined2 local_96;
+  undefined1 local_90;
+  undefined1 local_8e;
+  undefined1 local_8c;
+  undefined1 local_8a;
+  undefined1 local_88;
+  undefined1 local_86;
+  undefined1 local_84;
+  undefined1 local_7e;
+  undefined1 local_7c;
+  byte local_7a;
+  undefined4 local_58;
+  uint local_54;
+  undefined4 local_50;
+  undefined4 local_4c;
+  undefined4 uStack_48;
+  undefined4 local_44;
+  undefined4 local_40;
+  uint local_3c;
+  undefined1 local_38;
+  ushort local_36;
+  undefined1 local_30;
+  
+  puVar9 = (undefined1 *)GetRaceTypePtr();
+  uVar1 = *puVar9;
+  *(undefined4 *)(param_1 + 0xc) = 0;
+  *(undefined4 *)(param_1 + 0x10) = 0;
+  *(undefined2 *)(param_1 + 4) = 1;
+  uVar7 = FUN_80067560(uVar1);
+  *(undefined2 *)(param_1 + 6) = uVar7;
+  uVar8 = FUN_80067788(uVar1);
+  *(ushort *)(param_1 + 8) = uVar8 & 0xff;
+  iVar10 = GetCarReplayData();
+  uVar2 = *(undefined1 *)(iVar10 + 2);
+  uVar5 = GetChampionshipTrackIndex(uVar2,uVar1);
+  local_38 = *(undefined1 *)(iVar10 + 3);
+  local_36 = GetChampionshipCarIndex(uVar2);
+  local_36 = local_36 & 0xff;
+  uVar11 = GsGetWorkBase();
+  FUN_80066bd4(uVar5,auStack_e8,uVar11);
+  local_30 = FUN_80067888(uVar2);
+  cVar6 = FUN_800678a4(uVar2);
+  local_58._0_2_ = 0x8008;
+  if (cVar6 != '\0') {
+    local_58._0_2_ = 0x800a;
+  }
+  local_58 = CONCAT13(local_d2,CONCAT12(local_d4,(undefined2)local_58));
+  local_54 = CONCAT31(CONCAT12(local_ca,CONCAT11(local_cc,local_ce)),local_d0);
+  local_40 = CONCAT22(local_96,local_98);
+  uStack_48 = CONCAT13(local_7c,CONCAT12(local_7e,(undefined2)uStack_48));
+  local_3c = (uint)local_ac;
+  local_44 = CONCAT13(local_84,CONCAT12(local_30,(ushort)local_7a));
+  local_50 = CONCAT22(CONCAT11(local_8a,local_8c),CONCAT11(local_8e,local_90));
+  local_4c._0_2_ = CONCAT11(local_86,local_88);
+  cVar6 = *(char *)(iVar10 + 4);
+  *(undefined1 *)(param_1 + 0x14) = 1;
+  *(undefined1 *)(param_1 + 0x15) = uVar5;
+  *(undefined1 *)(param_1 + 0x17) = local_38;
+  *(undefined1 *)(param_1 + 0x19) = 0;
+  *(ushort *)(param_1 + 0x1a) = (ushort)(cVar6 == '\0');
+  *(undefined1 *)(param_1 + 0x16) = (undefined1)local_36;
+  uVar3 = param_1 + 0x1fU & 3;
+  puVar4 = (uint *)((param_1 + 0x1fU) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | local_58 >> (3 - uVar3) * 8;
+  uVar3 = param_1 + 0x1cU & 3;
+  puVar4 = (uint *)((param_1 + 0x1cU) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | local_58 << uVar3 * 8;
+  uVar3 = param_1 + 0x23U & 3;
+  puVar4 = (uint *)((param_1 + 0x23U) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | local_54 >> (3 - uVar3) * 8;
+  uVar3 = param_1 + 0x20U & 3;
+  puVar4 = (uint *)((param_1 + 0x20U) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | local_54 << uVar3 * 8;
+  uVar3 = param_1 + 0x27U & 3;
+  puVar4 = (uint *)((param_1 + 0x27U) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | local_50 >> (3 - uVar3) * 8;
+  uVar3 = param_1 + 0x24U & 3;
+  puVar4 = (uint *)((param_1 + 0x24U) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | local_50 << uVar3 * 8;
+  uVar3 = param_1 + 0x2bU & 3;
+  puVar4 = (uint *)((param_1 + 0x2bU) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | local_4c >> (3 - uVar3) * 8;
+  uVar3 = param_1 + 0x28U & 3;
+  puVar4 = (uint *)((param_1 + 0x28U) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | local_4c << uVar3 * 8;
+  uVar3 = param_1 + 0x2fU & 3;
+  puVar4 = (uint *)((param_1 + 0x2fU) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | uStack_48 >> (3 - uVar3) * 8;
+  uVar3 = param_1 + 0x2cU & 3;
+  puVar4 = (uint *)((param_1 + 0x2cU) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | uStack_48 << uVar3 * 8;
+  uVar3 = param_1 + 0x33U & 3;
+  puVar4 = (uint *)((param_1 + 0x33U) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | local_44 >> (3 - uVar3) * 8;
+  uVar3 = param_1 + 0x30U & 3;
+  puVar4 = (uint *)((param_1 + 0x30U) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | local_44 << uVar3 * 8;
+  uVar3 = param_1 + 0x37U & 3;
+  puVar4 = (uint *)((param_1 + 0x37U) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | local_40 >> (3 - uVar3) * 8;
+  uVar3 = param_1 + 0x34U & 3;
+  puVar4 = (uint *)((param_1 + 0x34U) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | local_40 << uVar3 * 8;
+  uVar3 = param_1 + 0x3bU & 3;
+  puVar4 = (uint *)((param_1 + 0x3bU) - uVar3);
+  *puVar4 = *puVar4 & -1 << (uVar3 + 1) * 8 | (uint)(local_ac >> (3 - uVar3) * 8);
+  uVar3 = param_1 + 0x38U & 3;
+  puVar4 = (uint *)((param_1 + 0x38U) - uVar3);
+  *puVar4 = *puVar4 & 0xffffffffU >> (4 - uVar3) * 8 | local_3c << uVar3 * 8;
+  *(undefined2 *)(param_1 + 0x3c) = 0;
+  uVar11 = FUN_80088bfc(param_1 + 0x40,auStack_f8,iVar10,uVar1);
+  puVar9 = (undefined1 *)FUN_80088910(uVar11,iVar10,auStack_f8,uVar1);
+  cVar6 = FUN_800677a8(uVar1);
+  if (cVar6 != '\0') {
+    *puVar9 = 4;
+    puVar9[1] = 0xf6;
+    puVar9[3] = 0;
+    puVar9 = puVar9 + 4;
+  }
+  *puVar9 = 0xff;
+  return;
+}
+
+
