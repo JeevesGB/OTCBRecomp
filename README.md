@@ -74,6 +74,10 @@ symbols.toml ─▶ python3 tools/sync_symbols.py ─▶ psx_symbols.h (PSX_FN_*
 
 See `psxrecomp/docs/SYMBOLS.md` for workflows and conventions.
 
+To read the recompiled functions as plain MIPS instead of the raw generated C,
+and for Linux build steps, see [`docs/READING_THE_CODE.md`](docs/READING_THE_CODE.md)
+(`python tools/show_func.py <name-or-address>` on Windows, `python3` elsewhere).
+
 ---
 
 ## Framework Pins
